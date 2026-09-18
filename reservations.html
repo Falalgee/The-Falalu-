@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta name="theme-color" content="#fbf9f5"/>
+<title>Reservations · The Falalu</title>
+<meta name="description" content="Reserve your stay at The Falalu. Best rate guaranteed when booked direct — 28 private pavilions on the Amalfi Coast."/>
+<meta property="og:title" content="Reservations · The Falalu"/>
+<meta property="og:description" content="Reserve your stay at The Falalu — best rate guaranteed when booked direct."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0}
+body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;padding:0}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;padding:0;margin:0}
+::-webkit-scrollbar{display:none}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+
+:root{
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+  --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
+  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --line:#e8e5df;--line-2:#dcd8d1;
+  --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
+  --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
+  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
+  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
+  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --dur:200ms;--dur-2:300ms;
+  --section-y:64px;--container-x:20px;--header-h:64px;
+}
+@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
+@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
+@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+
+body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow.no-rule::before{display:none}
+
+.container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
+.section{padding-block:var(--section-y)}
+.section-sm{padding-block:calc(var(--section-y) * 0.6)}
+
+.grid-2{display:grid;grid-template-columns:1fr;gap:24px}
+.grid-3{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+.divider{height:1px;background:var(--line);width:100%}
+
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link:hover{color:var(--ink-900)}
+.nav-link:hover::after{width:60%}
+.nav-link.is-active{color:var(--ink-900);font-weight:600}
+.nav-link.is-active::after{width:100%}
+
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
+.mobile-link.is-active{color:var(--ink-900);font-weight:500}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn:active{transform:translateY(0.5px)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
+.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
+.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
+
+.card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
+
+.tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
+@media(hover:hover){.tile:hover img{transform:scale(1.03)}}
+
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field:hover{border-color:var(--line-2)}
+.field:focus-within{background:#fff;border-color:var(--ink-900)}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
+.field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
+.field select{cursor:pointer}
+
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
+  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+@media(min-width:1280px){.header-nav{display:flex}}
+.header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
+@media(min-width:1536px){.header-concierge{display:flex}}
+.header-cta{flex-shrink:0}
+
+.drawer{position:fixed;inset:0;z-index:60;background:var(--paper);display:flex;flex-direction:column;transform:translateX(-100%);transition:transform 400ms var(--ease);padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.drawer.is-open{transform:translateX(0)}
+.drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
+
+/* ============ BOOKING LAYOUT ============ */
+.booking-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+@media(min-width:1024px){.booking-grid{grid-template-columns:7fr 5fr;gap:48px}}
+
+/* Summary card (sticky on desktop) */
+.summary-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  overflow:hidden;
+}
+@media(min-width:1024px){
+  .summary-card{position:sticky;top:calc(var(--header-h) + 24px)}
+}
+.summary-card__hero{
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:var(--paper-3);
+}
+.summary-card__hero img{width:100%;height:100%;object-fit:cover}
+.summary-card__body{padding:24px}
+
+.summary-row{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
+.summary-row:last-child{border-bottom:0}
+.summary-row .label{font-size:12px;font-weight:500;color:var(--ink-400);letter-spacing:0.02em}
+.summary-row .value{font-size:14px;font-weight:500;color:var(--ink-900);text-align:right}
+
+.summary-total{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:20px 0 0 0;
+  margin-top:8px;
+  border-top:1px solid var(--line-2);
+}
+.summary-total .amount{
+  font-family:var(--font-display);
+  font-size:26px;color:var(--ink-900);letter-spacing:-0.01em;
+}
+
+/* Trust strip */
+.trust-strip{
+  display:flex;flex-wrap:wrap;gap:20px 32px;
+  padding:24px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.trust-item{
+  display:flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:500;color:var(--ink-500);
+}
+.trust-item .material-symbols-outlined{font-size:18px;color:var(--accent);flex-shrink:0}
+
+/* Step numbers */
+.step-title{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:20px;
+}
+.step-title .num{
+  width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:var(--ink-900);color:#fff;
+  font-size:12px;font-weight:600;
+  flex-shrink:0;
+}
+.step-title .label{
+  font-family:var(--font-display);
+  font-weight:500;font-size:20px;color:var(--ink-900);
+  letter-spacing:-0.01em;
+}
+
+.pull-quote{padding-block:80px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+@media(min-width:768px){.pull-quote{padding-block:96px}}
+.pull-quote blockquote{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(18px,2.4vw,24px);line-height:1.5;color:var(--ink-800);margin:0 auto;max-width:720px}
+
+.footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
+@media(min-width:1024px){.footer-grid{grid-template-columns:4fr 3fr 5fr;gap:56px}}
+.footer-bottom{display:flex;flex-direction:column;gap:16px;padding-top:24px}
+@media(min-width:768px){.footer-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+
+.flex-wrap-gap{display:flex;flex-wrap:wrap;gap:12px}
+.no-scroll{overflow:hidden}
+*{-webkit-tap-highlight-color:transparent}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 900ms var(--ease),transform 900ms var(--ease);will-change:opacity,transform}
+.reveal.is-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <div class="header-left">
+      <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
+        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+      </button>
+      <a href="index.html" class="header-logo">The Falalu</a>
+    </div>
+    <nav class="header-nav">
+      <a class="nav-link" href="index.html">Overview</a>
+      <a class="nav-link" href="rooms.html">Rooms &amp; Suites</a>
+      <a class="nav-link" href="dining.html">Dining</a>
+      <a class="nav-link" href="experiences.html">Experiences</a>
+      <a class="nav-link" href="wellness.html">Wellness</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:+39089871000" class="header-concierge">
+        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span>Concierge</span>
+      </a>
+      <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DRAWER ============ -->
+<div id="drawer" class="drawer xl:hidden">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
+      <span class="material-symbols-outlined" style="font-size:22px">close</span>
+    </button>
+  </div>
+  <nav class="container drawer__nav">
+    <a class="mobile-link" href="index.html">Overview</a>
+    <a class="mobile-link" href="rooms.html">Rooms &amp; Suites</a>
+    <a class="mobile-link" href="dining.html">Dining</a>
+    <a class="mobile-link" href="experiences.html">Experiences</a>
+    <a class="mobile-link" href="wellness.html">Wellness</a>
+    <a class="mobile-link" href="gallery.html">Gallery</a>
+    <a class="mobile-link" href="about.html">About</a>
+    <a class="mobile-link" href="contact.html">Contact</a>
+  </nav>
+  <div class="container" style="padding-block:20px 24px;border-top:1px solid var(--line);flex-shrink:0">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <div style="min-width:0">
+        <div class="caption" style="color:var(--ink-400)">Amalfi Coast, Italy</div>
+        <div class="body-sm" style="margin-top:2px">+39 089 871 000</div>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm" style="flex-shrink:0">Reserve</a>
+    </div>
+  </div>
+</div>
+
+<main style="padding-top:var(--header-h)">
+
+<!-- ============ PAGE INTRO ============ -->
+<section class="container" style="padding-top:56px;padding-bottom:40px">
+  <div class="reveal">
+    <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
+      <div style="max-width:680px">
+        <span class="eyebrow">Reservations</span>
+        <h1 class="h1" style="margin:16px 0 0 0">Begin your stay.</h1>
+      </div>
+      <p class="lede" style="max-width:440px">
+        Best rate guaranteed when booked direct. No immediate charge — our major-domo will confirm your dates personally within two hours.
+      </p>
+    </div>
+  </div>
+
+  <div class="trust-strip reveal" style="margin-top:40px">
+    <div class="trust-item">
+      <span class="material-symbols-outlined">verified_user</span>
+      <span>Best rate guaranteed direct</span>
+    </div>
+    <div class="trust-item">
+      <span class="material-symbols-outlined">lock</span>
+      <span>Discreet booking</span>
+    </div>
+    <div class="trust-item">
+      <span class="material-symbols-outlined">schedule</span>
+      <span>Concierge confirms in 2 hours</span>
+    </div>
+    <div class="trust-item">
+      <span class="material-symbols-outlined">flight</span>
+      <span>Private heliport on-site</span>
+    </div>
+    <div class="trust-item">
+      <span class="material-symbols-outlined">directions_boat</span>
+      <span>Yacht mooring available</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING FORM ============ -->
+<section class="container section-sm" style="padding-bottom:var(--section-y)">
+  <div class="booking-grid">
+
+    <!-- LEFT: Form -->
+    <div class="reveal" style="display:flex;flex-direction:column;gap:40px">
+
+      <!-- Step 1: Dates -->
+      <div>
+        <div class="step-title">
+          <span class="num">1</span>
+          <span class="label">Select your dates</span>
+        </div>
+
+        <div class="grid-2" style="gap:16px">
+          <div>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Arrival</label>
+            <div class="field" style="background:#fff">
+              <input type="date" id="checkin" value="2025-10-18"/>
+            </div>
+          </div>
+          <div>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Departure</label>
+            <div class="field" style="background:#fff">
+              <input type="date" id="checkout" value="2025-10-22"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2" style="gap:16px;margin-top:16px">
+          <div>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Guests</label>
+            <div class="field" style="background:#fff">
+              <select id="guests">
+                <option>1 Adult</option>
+                <option selected>2 Adults</option>
+                <option>2 Adults, 1 Child</option>
+                <option>3 Adults</option>
+                <option>4 Adults</option>
+                <option>5+ (Multiple Pavilions)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Nights</label>
+            <div class="field" style="background:#fff;justify-content:center">
+              <span id="nights-display" style="font-size:15px;font-weight:500;color:var(--ink-900)">4 nights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Residence -->
+      <div>
+        <div class="step-title">
+          <span class="num">2</span>
+          <span class="label">Choose your residence</span>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+
+          <!-- Residence option 1 -->
+          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+            <input type="radio" name="residence" value="falalu" data-price="1850" data-name="The Falalu Suite" checked style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
+            <div style="flex:1;min-width:0">
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Cliffside · Sunset Vista · 85 m²</div>
+              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">The Falalu Suite</div>
+              <p class="body-sm" style="margin-top:6px">Signature residence. Private cliff terrace, outdoor rain shower, hand-carved stone bath.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$1,850</div>
+              <div class="caption" style="color:var(--ink-400)">per night</div>
+            </div>
+          </label>
+
+          <!-- Residence option 2 -->
+          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+            <input type="radio" name="residence" value="master" data-price="2400" data-name="The Master Pavilion Suite" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
+            <div style="flex:1;min-width:0">
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Pavilion Wing · Ocean Facing · 110 m²</div>
+              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">The Master Pavilion Suite</div>
+              <p class="body-sm" style="margin-top:6px">Featured suite. Infinity plunge pool, wellness pantry, sheltered daybed loggia.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$2,400</div>
+              <div class="caption" style="color:var(--ink-400)">per night</div>
+            </div>
+          </label>
+
+          <!-- Residence option 3 -->
+          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+            <input type="radio" name="residence" value="garden" data-price="1420" data-name="Garden Residence" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
+            <div style="flex:1;min-width:0">
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Botanical Wing · Private Enclosure · 72 m²</div>
+              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">Garden Residence</div>
+              <p class="body-sm" style="margin-top:6px">Olive grove courtyard, outdoor rain shower, linen reading cabana.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$1,420</div>
+              <div class="caption" style="color:var(--ink-400)">per night</div>
+            </div>
+          </label>
+
+          <!-- Residence option 4 -->
+          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+            <input type="radio" name="residence" value="penthouse" data-price="4200" data-name="Cliff Penthouse Villa" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
+            <div style="flex:1;min-width:0">
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Highest Tier · Unrestricted Seclusion · 160 m²</div>
+              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">Cliff Penthouse Villa</div>
+              <p class="body-sm" style="margin-top:6px">Crown villa. Two master suites, private wine vault, roof observatory.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$4,200</div>
+              <div class="caption" style="color:var(--ink-400)">per night</div>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Step 3: Guest details -->
+      <div>
+        <div class="step-title">
+          <span class="num">3</span>
+          <span class="label">Your details</span>
+        </div>
+
+        <form id="reservation-form" onsubmit="event.preventDefault();document.getElementById('reservation-success').style.display='flex';this.style.display='none';" style="display:flex;flex-direction:column;gap:16px">
+
+          <div class="grid-2" style="gap:16px">
+            <div>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
+              <div class="field" style="background:#fff">
+                <input type="text" placeholder="Your name" required/>
+              </div>
+            </div>
+            <div>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
+              <div class="field" style="background:#fff">
+                <input type="email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap:16px">
+            <div>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Phone</label>
+              <div class="field" style="background:#fff">
+                <input type="tel" placeholder="+39 ..." required/>
+              </div>
+            </div>
+            <div>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Country of Residence</label>
+              <div class="field" style="background:#fff">
+                <input type="text" placeholder="e.g. United Kingdom"/>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Special Requests or Notes</label>
+            <div class="field" style="background:#fff;min-height:auto">
+              <textarea rows="4" placeholder="Arrival time, dietary preferences, celebrations, mobility considerations, or anything else we should know..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:8px">
+            Confirm Reservation Request
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+          <p class="caption" style="text-align:center;color:var(--ink-400)">No immediate charge · Major-domo confirms within 2 hours</p>
+        </form>
+
+        <div id="reservation-success" style="display:none;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:40px 20px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)">
+          <span class="material-symbols-outlined" style="font-size:36px;color:var(--accent)">verified</span>
+          <h4 class="h3" style="font-size:22px;font-weight:500">Reservation Request Received.</h4>
+          <p class="body-sm" style="max-width:420px">Your private major-domo will confirm availability and details via email within two hours. No charge has been made.</p>
+          <a href="index.html" class="btn btn-secondary btn-sm" style="margin-top:8px">Return to Overview</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Summary card -->
+    <aside class="reveal">
+      <div class="summary-card">
+
+        <div class="summary-card__hero">
+          <img alt="The Falalu Suite — cliffside bedroom with ocean horizon" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_600,g_auto,q_auto,f_auto/v1789709391/photo-captures-serene-beauty-modern-minimalist-bedroom-seaside-villa-awe-inspiring-ocean-view-sleek-354199313_gsfohq.jpg" decoding="async" width="800" height="600"/>
+        </div>
+
+        <div class="summary-card__body">
+
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:20px">
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Your Stay Summary</span>
+            <h3 class="h3" id="summary-residence" style="font-size:20px;font-weight:500;margin-top:4px">The Falalu Suite</h3>
+          </div>
+
+          <div style="display:flex;flex-direction:column">
+            <div class="summary-row">
+              <span class="label">Arrival</span>
+              <span class="value" id="summary-checkin">18 Oct 2025</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Departure</span>
+              <span class="value" id="summary-checkout">22 Oct 2025</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Guests</span>
+              <span class="value" id="summary-guests">2 Adults</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Nights</span>
+              <span class="value" id="summary-nights">4 nights</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Rate</span>
+              <span class="value" id="summary-rate">$1,850 / night</span>
+            </div>
+          </div>
+
+          <div class="summary-total">
+            <span class="caption" style="color:var(--ink-700);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Estimated Total</span>
+            <span class="amount" id="summary-total">$7,400</span>
+          </div>
+
+          <p class="caption" style="color:var(--ink-400);margin-top:14px;line-height:1.6">Includes sanctuary, ecological, and valet fees. Final rate confirmed by your major-domo on arrival.</p>
+
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ============ CONCIERGE FALLBACK ============ -->
+<section class="container section-sm" style="padding-bottom:var(--section-y)">
+  <div class="reveal" style="background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px 28px;display:flex;flex-direction:column;gap:24px;align-items:flex-start">
+    <div style="max-width:640px">
+      <span class="eyebrow">Prefer a private conversation?</span>
+      <h3 class="h3" style="margin:14px 0 12px 0">Speak with the concierge directly.</h3>
+      <p class="body">For multi-residence bookings, extended stays, or bespoke arrival arrangements — our head concierge is available twenty-four hours a day.</p>
+    </div>
+    <div class="flex-wrap-gap">
+      <a href="tel:+39089871000" class="btn btn-primary btn-lg">
+        <span class="material-symbols-outlined">call</span>
+        +39 089 871 000
+      </a>
+      <a href="mailto:reserve@thefalalu.com" class="btn btn-secondary btn-lg">
+        <span class="material-symbols-outlined">mail</span>
+        reserve@thefalalu.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="pull-quote">
+  <div class="container reveal" style="max-width:720px">
+    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:22px">key</span>
+    <blockquote>
+      "Booked direct, arrived by tender at dusk, and by the time we reached our terrace the bath had already been drawn."
+    </blockquote>
+    <div class="caption" style="margin-top:24px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">
+      Guest Ledger · Returned 2024
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:var(--paper-2);border-top:1px solid var(--line)">
+  <div class="container" style="padding-block:64px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+
+      <div>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
+        <div style="margin-top:28px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+          <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
+          <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:12px">
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Ecological Stewardship</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Private Aviation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
+        <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
+          <input required type="email" placeholder="your@email.com" aria-label="Email address"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
+          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+        </form>
+        <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px" class="caption">
+        <span>© 2025 The Falalu Resort &amp; Sanctuary</span>
+        <a href="#" style="color:var(--ink-400)">Privacy</a>
+        <a href="#" style="color:var(--ink-400)">Legal</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:24px">
+        <a class="nav-link" href="#">Instagram</a>
+        <a class="nav-link" href="#">Journal</a>
+        <a class="nav-link" href="#">AD</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const drawer = document.getElementById('drawer');
+  const body = document.body;
+  function openDrawer(){ drawer.classList.add('is-open'); body.classList.add('no-scroll'); }
+  function closeDrawer(){ drawer.classList.remove('is-open'); body.classList.remove('no-scroll'); }
+  document.querySelectorAll('[data-open-drawer]').forEach(el => el.addEventListener('click', openDrawer));
+  document.querySelectorAll('[data-close-drawer]').forEach(el => el.addEventListener('click', closeDrawer));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+  // ---------- LIVE SUMMARY ----------
+  const checkin = document.getElementById('checkin');
+  const checkout = document.getElementById('checkout');
+  const guests = document.getElementById('guests');
+  const nightsDisplay = document.getElementById('nights-display');
+  const residenceRadios = document.querySelectorAll('input[name="residence"]');
+
+  const summaryCheckin = document.getElementById('summary-checkin');
+  const summaryCheckout = document.getElementById('summary-checkout');
+  const summaryGuests = document.getElementById('summary-guests');
+  const summaryNights = document.getElementById('summary-nights');
+  const summaryRate = document.getElementById('summary-rate');
+  const summaryTotal = document.getElementById('summary-total');
+  const summaryResidence = document.getElementById('summary-residence');
+
+  function formatDate(input){
+    if (!input || !input.value) return '—';
+    const d = new Date(input.value + 'T12:00:00');
+    if (isNaN(d)) return '—';
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  function nightsBetween(){
+    if (!checkin.value || !checkout.value) return 0;
+    const a = new Date(checkin.value + 'T12:00:00');
+    const b = new Date(checkout.value + 'T12:00:00');
+    const diff = Math.round((b - a) / 86400000);
+    return Math.max(0, diff);
+  }
+
+  function selectedResidence(){
+    let selected = residenceRadios[0];
+    residenceRadios.forEach(r => { if (r.checked) selected = r; });
+    return selected;
+  }
+
+  function update(){
+    const nights = nightsBetween();
+    const nightsText = nights === 1 ? '1 night' : nights + ' nights';
+    if (nightsDisplay) nightsDisplay.textContent = nightsText;
+
+    const res = selectedResidence();
+    const price = parseInt(res.getAttribute('data-price'), 10);
+    const name = res.getAttribute('data-name');
+
+    summaryCheckin.textContent = formatDate(checkin);
+    summaryCheckout.textContent = formatDate(checkout);
+    summaryGuests.textContent = guests.value;
+    summaryNights.textContent = nightsText;
+    summaryRate.textContent = '$' + price.toLocaleString() + ' / night';
+    summaryResidence.textContent = name;
+
+    const total = price * Math.max(nights, 1);
+    summaryTotal.textContent = '$' + total.toLocaleString();
+  }
+
+  [checkin, checkout, guests].forEach(el => {
+    if (el) el.addEventListener('change', update);
+    if (el) el.addEventListener('input', update);
+  });
+  residenceRadios.forEach(r => r.addEventListener('change', update));
+
+  update();
+
+  // Highlight the selected residence card
+  function refreshResidenceStyles(){
+    residenceRadios.forEach(r => {
+      const label = r.closest('label');
+      if (!label) return;
+      if (r.checked) {
+        label.style.borderColor = 'var(--ink-900)';
+        label.style.background = '#fff';
+      } else {
+        label.style.borderColor = 'var(--line)';
+        label.style.background = '#fff';
+      }
+    });
+  }
+  residenceRadios.forEach(r => r.addEventListener('change', refreshResidenceStyles));
+  refreshResidenceStyles();
+
+  // ---------- REVEAL ----------
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+  }
+})();
+</script>
+
+</body>
+            </html>
