@@ -9,12 +9,13 @@
 <meta property="og:title" content="Dining · The Falalu"/>
 <meta property="og:description" content="Four distinct culinary enclaves on the Amalfi Coast."/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711861/fine-dining-elegance-stockcake_oisnrw.jpg"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789711861/fine-dining-elegance-stockcake_oisnrw.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 
@@ -30,41 +31,42 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
 .eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
@@ -79,59 +81,58 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 .divider{height:1px;background:var(--line);width:100%}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
 .btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
 .btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn-lg{height:50px;padding:0 24px;font-size:12px;letter-spacing:0.12em}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:40px;padding:0 16px}.btn-block-sm{width:100%}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease)}
-.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
+.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-1px)}
 .card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
-.card-plain{background:#fff;border-radius:var(--r-lg)}
 
 .tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 800ms var(--ease)}
+@media(hover:hover){.tile:hover img{transform:scale(1.03)}}
 
-.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
 .badge-accent{background:var(--accent);color:#fff}
 .badge-dark{background:var(--ink-900);color:#fff}
 .badge-glass{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink-800)}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:58px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
 .field:hover{border-color:var(--line-2)}
 .field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink-400)}
 .field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
 .field select{cursor:pointer}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -142,17 +143,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
-/* Anchor offset under fixed header */
-#solstice-menu, #reservation{scroll-margin-top:calc(var(--header-h) + 24px)}
+#solstice-menu,#reservation{scroll-margin-top:calc(var(--header-h) + 24px)}
 
 .venue-tabs{display:flex;flex-wrap:wrap;gap:8px}
-.venue-tab{
-  display:inline-flex;align-items:center;justify-content:center;
-  height:44px;padding:0 18px;border-radius:var(--r-md);
-  font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;
-  transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap;flex:1;min-width:0;
-}
+.venue-tab{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 18px;border-radius:var(--r-md);font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap;flex:1;min-width:0}
 .venue-tab:hover{background:var(--paper-3);color:var(--ink-900)}
 .venue-tab.is-active{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
 
@@ -164,13 +158,8 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   .menu-course__pairing{text-align:right;flex-shrink:0}
 }
 
-.advisory{background:var(--ink-900);color:#fff;padding-block:64px}
-@media(min-width:768px){.advisory{padding-block:88px}}
-.advisory__inner{display:flex;flex-direction:column;gap:32px}
-@media(min-width:1024px){.advisory__inner{flex-direction:row;align-items:center;justify-content:space-between;gap:64px}}
-
 .quote-strip{text-align:center;padding-block:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
-@media(min-width:768px){.quote-strip{padding-block:96px}}
+@media(min-width:768px){.quote-strip{padding-block:88px}}
 
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
@@ -182,17 +171,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
-.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.stagger > *{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
 .stagger.is-in > *{opacity:1;transform:none}
 .stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:80ms}
-.stagger.is-in > *:nth-child(3){transition-delay:160ms}
-.stagger.is-in > *:nth-child(4){transition-delay:240ms}
+.stagger.is-in > *:nth-child(2){transition-delay:70ms}
+.stagger.is-in > *:nth-child(3){transition-delay:140ms}
+.stagger.is-in > *:nth-child(4){transition-delay:210ms}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
   .reveal,.stagger > *{opacity:1;transform:none}
 }
 </style>
@@ -200,12 +189,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -221,7 +209,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -229,10 +217,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -260,8 +247,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:32px">
+<section class="container" style="padding-top:48px;padding-bottom:28px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:680px">
@@ -275,16 +261,14 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ HERO BANNER ============ -->
-<section class="container" style="padding-bottom:64px">
+<section class="container" style="padding-bottom:56px">
   <div class="reveal">
     <div class="tile" style="aspect-ratio:21/9;border-radius:var(--r-lg)">
-      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711861/fine-dining-elegance-stockcake_oisnrw.jpg"/>
+      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1920,h_820,g_auto,q_auto,f_auto/v1789711861/fine-dining-elegance-stockcake_oisnrw.jpg" fetchpriority="high" decoding="async" width="1920" height="820"/>
     </div>
   </div>
 </section>
 
-<!-- ============ PHILOSOPHY ============ -->
 <section class="container section-sm" style="padding-bottom:var(--section-y)">
   <div class="grid-2" style="gap:40px;align-items:center">
 
@@ -314,18 +298,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <div class="reveal">
       <div class="tile" style="aspect-ratio:4/3">
-        <img alt="Chef's hands plating a fine dining dish with tweezers, high-angle close-up" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711867/professional-chef-hands-plating-fine-dining-dish-tweezers-high-angle-close-up-s-using-to-place-garnish-emphasizing-422141252_m4gnxl.jpg"/>
+        <img alt="Chef's hands plating a fine dining dish with tweezers, high-angle close-up" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1000,h_750,g_auto,q_auto,f_auto/v1789711867/professional-chef-hands-plating-fine-dining-dish-tweezers-high-angle-close-up-s-using-to-place-garnish-emphasizing-422141252_m4gnxl.jpg" decoding="async" width="1000" height="750"/>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- ============ FOUR VENUES ============ -->
 <section class="section" style="background:var(--paper-2)">
   <div class="container">
 
-    <div class="reveal" style="max-width:640px;margin-bottom:56px">
+    <div class="reveal" style="max-width:640px;margin-bottom:52px">
       <span class="eyebrow">Sacred Spaces</span>
       <h2 class="h2" style="margin:16px 0 14px 0">Four distinct enclaves.</h2>
       <p class="body">From candlelit limestone vaults to sun-drenched coastal pergolas, each venue reflects a distinctive rhythm of daylight and coastal air.</p>
@@ -335,13 +318,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="L'Atelier Falalu — intimate fine dining room with warm lighting and refined table settings" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711874/images_4_tozeur.jpg"/>
+          <img alt="L'Atelier Falalu — intimate fine dining room with warm lighting and refined table settings" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789711874/images_4_tozeur.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-dark" style="position:absolute;top:14px;left:14px">18 Covers Only</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px">
-            <h3 class="h3" style="font-size:clamp(20px,2.4vw,24px)">L'Atelier Falalu</h3>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">Evening · 10 Courses</span>
+            <h3 class="h3" style="font-size:clamp(19px,2.2vw,22px)">L'Atelier Falalu</h3>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">Evening · 10 Courses</span>
           </div>
           <p class="body-sm">The sanctum of our culinary dialogue. An open-hearth theater where fire, salt-cured ocean fish, and heritage root crops converge into an evolving multi-movement tasting journey.</p>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)">
@@ -353,13 +336,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Olive Pergola — sunlit terrace breakfast under ancient olive trees with views over the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711882/images_5_xftoh7.jpg"/>
+          <img alt="Olive Pergola — sunlit terrace breakfast under ancient olive trees with views over the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789711882/images_5_xftoh7.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Morning to Dusk</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px">
-            <h3 class="h3" style="font-size:clamp(20px,2.4vw,24px)">The Olive Pergola</h3>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">Daybreak to Mid-Day</span>
+            <h3 class="h3" style="font-size:clamp(19px,2.2vw,22px)">The Olive Pergola</h3>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">Daybreak to Mid-Day</span>
           </div>
           <p class="body-sm">Sunlit coastal mornings celebrated through hand-rolled sourdoughs, wild honeycomb from our hives, fresh buffalo milk cheeses, and bespoke cold brews extracted over twelve hours.</p>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)">
@@ -371,13 +354,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Cellar & Cigar Lounge — subterranean wine cellar with vintage racks and low amber light" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711889/images_6_a1eypj.jpg"/>
+          <img alt="Cellar & Cigar Lounge — subterranean wine cellar with vintage racks and low amber light" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789711889/images_6_a1eypj.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Subterranean Vault</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px">
-            <h3 class="h3" style="font-size:clamp(20px,2.4vw,24px)">Cellar &amp; Cigar Lounge</h3>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">17:00 · Late Night</span>
+            <h3 class="h3" style="font-size:clamp(19px,2.2vw,22px)">Cellar &amp; Cigar Lounge</h3>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">17:00 · Late Night</span>
           </div>
           <p class="body-sm">Four thousand rare regional and vintage biodynamic bottles preserved within century-old natural limestone caves. Guided flights curated nightly by Head Sommelier Francesca Lotti.</p>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)">
@@ -389,13 +372,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Private Pavilion Dining — secluded cliffside terrace at night lit by candles, set for two over the dark sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711897/images_7_epn7uh.jpg"/>
+          <img alt="Private Pavilion Dining — secluded cliffside terrace at night lit by candles, set for two over the dark sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789711897/images_7_epn7uh.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-accent" style="position:absolute;top:14px;left:14px">Bespoke Seclusion</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px">
-            <h3 class="h3" style="font-size:clamp(20px,2.4vw,24px)">Private Pavilion Dining</h3>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">By Appointment</span>
+            <h3 class="h3" style="font-size:clamp(19px,2.2vw,22px)">Private Pavilion Dining</h3>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;white-space:nowrap;flex-shrink:0;padding-top:6px">By Appointment</span>
           </div>
           <p class="body-sm">Total privacy upon your secluded cliffside terrace or floating sea pontoon. Tailored multi-course narratives prepared by a dedicated chef and served under Mediterranean candlelight.</p>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)">
@@ -409,9 +392,8 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ SOLSTICE MENU ============ -->
 <section id="solstice-menu" class="container section">
-  <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 56px auto">
+  <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 52px auto">
     <span class="eyebrow no-rule" style="justify-content:center;display:inline-flex">Tasting Menu Manifest</span>
     <h2 class="h2" style="margin:16px 0 14px 0">Winter / Spring Solstice.</h2>
     <p class="body" style="font-style:italic;font-family:var(--font-display);font-size:17px;color:var(--ink-500)">"Between dormant mountain roots and the first brine of early coastal warmth."</p>
@@ -427,7 +409,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div class="menu-course">
         <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
-          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Movement I · Sea &amp; Acid</span>
+          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Movement I · Sea &amp; Acid</span>
           <h4 class="h3" style="font-size:20px;font-weight:500">Langoustine &amp; Finger Lime</h4>
           <p class="body-sm">Cold-smoked dashi extraction, sea lettuce crisp, candied coastal fennel</p>
         </div>
@@ -439,7 +421,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div class="menu-course">
         <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
-          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Movement II · Soil &amp; Smoke</span>
+          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Movement II · Soil &amp; Smoke</span>
           <h4 class="h3" style="font-size:20px;font-weight:500">Charred King Oyster Mushroom</h4>
           <p class="body-sm">Black winter truffle emulsion, roasted hazelnut milk, fermented allium reduction</p>
         </div>
@@ -451,7 +433,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div class="menu-course">
         <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
-          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Movement III · Earth &amp; Pine</span>
+          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Movement III · Earth &amp; Pine</span>
           <h4 class="h3" style="font-size:20px;font-weight:500">Aged Wagyu Ribeye</h4>
           <p class="body-sm">Infused with wild mountain juniper, marrow-glazed salsify, preserved elderberry jus</p>
         </div>
@@ -463,7 +445,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div class="menu-course">
         <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
-          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Movement IV · Floral Awakening</span>
+          <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Movement IV · Floral Awakening</span>
           <h4 class="h3" style="font-size:20px;font-weight:500">Citrus Blossom &amp; Sheep's Milk Gelato</h4>
           <p class="body-sm">Cold-pressed Coratina olive oil, crushed bee pollen, Meyer lemon sea mist</p>
         </div>
@@ -477,7 +459,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:16px;align-items:flex-start">
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px">Seven or Ten Course Experience</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px">Seven or Ten Course Experience</div>
         <div class="body-sm" style="margin-top:4px;color:var(--ink-400)">€260 per guest · Sommelier pairing €180</div>
       </div>
       <a href="#reservation" class="btn btn-secondary btn-sm">
@@ -488,10 +470,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ RESERVATION ============ -->
 <section id="reservation" class="section" style="background:var(--paper-2)">
   <div class="container">
-    <div class="reveal" style="max-width:640px;margin-bottom:48px">
+    <div class="reveal" style="max-width:640px;margin-bottom:44px">
       <span class="eyebrow">Reservation Protocol</span>
       <h2 class="h2" style="margin:16px 0 14px 0">Table allocation &amp; enquiry.</h2>
       <p class="body">Given our commitment to absolute discretion and artisanal ingredient allocations, tables are made available thirty days in advance. Dedicated requests receive immediate concierge response.</p>
@@ -499,24 +480,24 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <div class="grid-2" style="gap:32px;align-items:stretch">
 
-      <div class="reveal" style="background:var(--ink-900);color:#fff;padding:36px 32px;border-radius:var(--r-lg);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+      <div class="reveal" style="background:var(--ink-900);color:#fff;padding:32px 28px;border-radius:var(--r-lg);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
         <div style="display:flex;flex-direction:column;gap:20px">
           <span class="eyebrow no-rule" style="color:var(--gold)">Private Sanctuary Dining</span>
-          <h3 class="h3" style="color:#fff;font-size:clamp(22px,2.6vw,28px)">In-residence guests receive priority seating.</h3>
-          <p class="body" style="color:rgba(255,255,255,.7)">Suite reservations guarantee priority at L'Atelier and private terrace setups on request. Dedicated chef narratives and cellar pairings can be arranged during your stay.</p>
+          <h3 class="h3" style="color:#fff;font-size:clamp(21px,2.5vw,26px)">In-residence guests receive priority seating.</h3>
+          <p class="body" style="color:rgba(255,255,255,.72)">Suite reservations guarantee priority at L'Atelier and private terrace setups on request. Dedicated chef narratives and cellar pairings can be arranged during your stay.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)">
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">hotel_class</span>
-            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Falalu In-Residence Priority</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">hotel_class</span>
+            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Falalu In-Residence Priority</span>
           </div>
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">wine_bar</span>
-            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Cellar Access by Sommelier</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">wine_bar</span>
+            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Cellar Access by Sommelier</span>
           </div>
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">room_service</span>
-            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Cliffside Pavilion Service</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">room_service</span>
+            <span class="caption" style="color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Cliffside Pavilion Service</span>
           </div>
         </div>
       </div>
@@ -525,7 +506,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         <form onsubmit="event.preventDefault();document.getElementById('dining-confirmation').style.display='flex';this.style.display='none';" style="display:flex;flex-direction:column;gap:16px">
 
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:10px">Select Sanctuary Dining Venue</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:10px">Select Sanctuary Dining Venue</label>
             <div class="venue-tabs">
               <button type="button" class="venue-tab is-active">L'Atelier</button>
               <button type="button" class="venue-tab">Pergola</button>
@@ -536,13 +517,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="Your name" required/>
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
               <div class="field" style="background:#fff">
                 <input type="email" placeholder="your@email.com" required/>
               </div>
@@ -551,7 +532,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Guests</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Guests</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>1 Guest — Solo Contemplation</option>
@@ -563,7 +544,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Preferred Date</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Preferred Date</label>
               <div class="field" style="background:#fff">
                 <input type="date" value="2025-10-18"/>
               </div>
@@ -572,7 +553,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Seating Time</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Seating Time</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>18:30 — Sunset Twilight</option>
@@ -582,7 +563,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Dietary Notes</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Dietary Notes</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="Pescatarian, truffle allergies..."/>
               </div>
@@ -608,14 +589,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ QUOTE ============ -->
 <section class="quote-strip">
   <div class="container reveal" style="max-width:820px">
-    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:18px">flare</span>
-    <p class="quote" style="font-size:clamp(18px,2.4vw,24px);margin:0">
+    <span class="material-symbols-outlined" style="font-size:26px;color:var(--accent);display:inline-block;margin-bottom:18px;font-variation-settings:'wght' 400">flare</span>
+    <p style="font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(18px,2.2vw,24px);line-height:1.5;color:var(--ink-800);margin:0">
       "The table at Falalu is not merely dinner; it is an intimate ceremony where the sea breeze, volcanic earth, and centuries-old stone join you as unhurried guests."
     </p>
-    <div class="caption" style="margin-top:22px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">
+    <div class="caption" style="margin-top:22px;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">
       The Michelin Guide · Retrospective
     </div>
   </div>
@@ -623,24 +603,23 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -650,13 +629,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -713,4 +692,4 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 </script>
 
 </body>
-        </html>
+</html>
