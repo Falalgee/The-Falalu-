@@ -9,12 +9,13 @@
 <meta property="og:title" content="Experiences · The Falalu"/>
 <meta property="og:description" content="Bespoke maritime charters, private helicopter journeys, and hands-on artisan experiences on the Amalfi Coast."/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714285/images_14_tqczhw.jpg"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789714285/images_14_tqczhw.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 
@@ -30,41 +31,42 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
 .eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
@@ -73,64 +75,64 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 .grid-2{display:grid;grid-template-columns:1fr;gap:24px}
 .grid-3{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+.grid-4{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}}
 
 .divider{height:1px;background:var(--line);width:100%}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
 .btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
 .btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn-lg{height:50px;padding:0 24px;font-size:12px;letter-spacing:0.12em}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:40px;padding:0 16px}.btn-block-sm{width:100%}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease)}
-.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
+.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-1px)}
 .card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
-.card-plain{background:#fff;border-radius:var(--r-lg)}
 
 .tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 800ms var(--ease)}
+@media(hover:hover){.tile:hover img{transform:scale(1.03)}}
 
-.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
 .badge-accent{background:var(--accent);color:#fff}
 .badge-dark{background:var(--ink-900);color:#fff}
 .badge-glass{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink-800)}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:58px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
 .field:hover{border-color:var(--line-2)}
 .field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink-400)}
 .field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
 .field select{cursor:pointer}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -141,23 +143,23 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
-#curators-day, #enquiry{scroll-margin-top:calc(var(--header-h) + 24px)}
+#curators-day,#enquiry{scroll-margin-top:calc(var(--header-h) + 24px)}
 
 .exp-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid var(--line);margin-top:20px}
 .exp-meta__left{display:flex;flex-direction:column;gap:2px}
-.exp-meta__left .duration{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.exp-meta__left .price{font-family:var(--font-display);font-size:18px;color:var(--ink-900);margin-top:2px}
+.exp-meta__left .duration{font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.exp-meta__left .price{font-family:var(--font-display);font-size:18px;color:var(--ink-900);margin-top:2px;letter-spacing:-0.005em}
 
 .day-timeline{display:flex;flex-direction:column;gap:0;position:relative}
 .day-slot{display:flex;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
 .day-slot:last-child{border-bottom:0}
-.day-slot__time{font-family:var(--font-display);font-size:20px;color:var(--ink-900);flex-shrink:0;width:72px;line-height:1.2}
+.day-slot__time{font-family:var(--font-display);font-size:20px;color:var(--ink-900);flex-shrink:0;width:72px;line-height:1.2;letter-spacing:-0.01em}
 .day-slot__body{min-width:0;flex:1}
-.day-slot__title{font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--ink-900);margin-bottom:4px}
+.day-slot__title{font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--ink-900);margin-bottom:4px;letter-spacing:-0.005em}
 .day-slot__desc{font-size:13px;line-height:1.6;color:var(--ink-500)}
 
 .quote-strip{text-align:center;padding-block:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
-@media(min-width:768px){.quote-strip{padding-block:96px}}
+@media(min-width:768px){.quote-strip{padding-block:88px}}
 
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
@@ -169,19 +171,19 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
-.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.stagger > *{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
 .stagger.is-in > *{opacity:1;transform:none}
 .stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:80ms}
-.stagger.is-in > *:nth-child(3){transition-delay:160ms}
-.stagger.is-in > *:nth-child(4){transition-delay:240ms}
-.stagger.is-in > *:nth-child(5){transition-delay:320ms}
-.stagger.is-in > *:nth-child(6){transition-delay:400ms}
+.stagger.is-in > *:nth-child(2){transition-delay:70ms}
+.stagger.is-in > *:nth-child(3){transition-delay:140ms}
+.stagger.is-in > *:nth-child(4){transition-delay:210ms}
+.stagger.is-in > *:nth-child(5){transition-delay:280ms}
+.stagger.is-in > *:nth-child(6){transition-delay:350ms}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
   .reveal,.stagger > *{opacity:1;transform:none}
 }
 </style>
@@ -189,12 +191,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -210,7 +211,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -218,10 +219,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -249,8 +249,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:32px">
+<section class="container" style="padding-top:48px;padding-bottom:28px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:680px">
@@ -264,20 +263,18 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ HERO BANNER ============ -->
-<section class="container" style="padding-bottom:64px">
+<section class="container" style="padding-bottom:56px">
   <div class="reveal">
     <div class="tile" style="aspect-ratio:21/9;border-radius:var(--r-lg)">
-      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714285/images_14_tqczhw.jpg"/>
+      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1920,h_820,g_auto,q_auto,f_auto/v1789714285/images_14_tqczhw.jpg" fetchpriority="high" decoding="async" width="1920" height="820"/>
     </div>
   </div>
 </section>
 
-<!-- ============ SIGNATURE EXPERIENCES ============ -->
 <section class="section" style="background:var(--paper-2)">
   <div class="container">
 
-    <div class="reveal" style="max-width:640px;margin-bottom:56px">
+    <div class="reveal" style="max-width:640px;margin-bottom:52px">
       <span class="eyebrow">The Collection</span>
       <h2 class="h2" style="margin:16px 0 14px 0">Six signature journeys.</h2>
       <p class="body">Every experience is led by a resident specialist and hosted in English, Italian, and French. Advance booking recommended for groups of three or more.</p>
@@ -287,10 +284,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Vintage wooden Riva yacht on calm Mediterranean water at golden hour" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714292/images_15_rdq6bi.jpg"/>
+          <img alt="Vintage wooden Riva yacht on calm Mediterranean water at golden hour" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714292/images_15_rdq6bi.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Maritime</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">The Riva Yacht Expedition</h3>
           <p class="body-sm" style="margin-top:10px">Glide past ancient sea grottos with cold champagne and freshly caught sea urchin, steered by our seasoned private captain. Depart from THE FALALU's private jetty at dusk.</p>
           <div class="exp-meta">
@@ -305,10 +302,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Turquoise water inside a limestone sea cave along the Amalfi Coast" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714300/images_16_m4zzmg.jpg"/>
+          <img alt="Turquoise water inside a limestone sea cave along the Amalfi Coast" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714300/images_16_m4zzmg.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Coastal</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">Blue Grotto &amp; Sea Caves</h3>
           <p class="body-sm" style="margin-top:10px">A privately guided tender into the lesser-known grottos of the Sorrentine Peninsula — including the Grotta dello Smeraldo and the Bagni della Regina Giovanna.</p>
           <div class="exp-meta">
@@ -323,10 +320,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Aerial view of the Amalfi coastline from a private helicopter" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714307/images_17_j963ju.jpg"/>
+          <img alt="Aerial view of the Amalfi coastline from a private helicopter" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714307/images_17_j963ju.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Aerial</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">Helicopter Coastal Odyssey</h3>
           <p class="body-sm" style="margin-top:10px">Depart from our private helipad for a 60-minute sweep of Positano, Capri, Pompeii, and the Amalfi cliffs. Champagne landing on the slopes of Vesuvius available.</p>
           <div class="exp-meta">
@@ -341,10 +338,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Terraced Amalfi lemon grove with mature citrus trees and stone retaining walls overlooking the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714331/images_18_cryr5c.jpg"/>
+          <img alt="Terraced Amalfi lemon grove with mature citrus trees and stone retaining walls overlooking the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714331/images_18_cryr5c.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Botanical</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">Lemon Grove Walk</h3>
           <p class="body-sm" style="margin-top:10px">A guided morning with our head gardener through the 4.2-hectare terraced groves. Learn the Sfusato Amalfitano cultivation, then press your own limoncello.</p>
           <div class="exp-meta">
@@ -359,10 +356,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Candlelit table for two on a cliffside terrace at night, overlooking the dark Mediterranean Sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714337/images_19_pa5kio.jpg"/>
+          <img alt="Candlelit table for two on a cliffside terrace at night, overlooking the dark Mediterranean Sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714337/images_19_pa5kio.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-accent" style="position:absolute;top:14px;left:14px">Signature</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">Cliffside Celestial Dinner</h3>
           <p class="body-sm" style="margin-top:10px">A 7-course tasting menu served under open sky, guided by our resident astronomer with a Swarovski telescope and constellation storytelling through the meal.</p>
           <div class="exp-meta">
@@ -377,10 +374,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <article class="card">
         <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Artisan hands shaping a ceramic vessel on a potter's wheel in a sunlit studio" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714348/images_20_fm24q5.jpg"/>
+          <img alt="Artisan hands shaping a ceramic vessel on a potter's wheel in a sunlit studio" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_560,g_auto,q_auto,f_auto/v1789714348/images_20_fm24q5.jpg" decoding="async" width="900" height="560"/>
           <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Artisan</span>
         </div>
-        <div style="padding:24px">
+        <div style="padding:22px">
           <h3 class="h3" style="font-size:20px;font-weight:500">Ceramics at Vietri</h3>
           <p class="body-sm" style="margin-top:10px">Private half-day at a fourth-generation Vietri sul Mare studio. Hand-throw your own vessel on the wheel and take home the finished piece — fired, glazed, and shipped.</p>
           <div class="exp-meta">
@@ -397,7 +394,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ THE CURATOR'S DAY ============ -->
 <section id="curators-day" class="section">
   <div class="container">
     <div class="grid-2" style="gap:48px;align-items:start">
@@ -470,7 +466,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div class="reveal">
         <div class="tile" style="aspect-ratio:4/5">
-          <img alt="A cliffside terrace at The Falalu set for a full day of experiences, with views over the Mediterranean" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714352/images_21_duq7wp.jpg"/>
+          <img alt="A cliffside terrace at The Falalu set for a full day of experiences, with views over the Mediterranean" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789714352/images_21_duq7wp.jpg" decoding="async" width="800" height="1000"/>
         </div>
       </div>
 
@@ -478,29 +474,28 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ ENQUIRY FORM ============ -->
 <section id="enquiry" class="section" style="background:var(--paper-2)">
   <div class="container">
     <div class="grid-2" style="gap:32px;align-items:stretch">
 
-      <div class="reveal" style="background:var(--ink-900);color:#fff;padding:36px 32px;border-radius:var(--r-lg);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+      <div class="reveal" style="background:var(--ink-900);color:#fff;padding:32px 28px;border-radius:var(--r-lg);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
         <div style="display:flex;flex-direction:column;gap:20px">
           <span class="eyebrow no-rule" style="color:var(--gold)">Concierge Curation</span>
-          <h3 class="h3" style="color:#fff;font-size:clamp(22px,2.6vw,28px)">Every journey begins with a conversation.</h3>
-          <p class="body" style="color:rgba(255,255,255,.7)">Our Resident Curator reviews every enquiry personally and will propose a tailored itinerary within four hours — including weather contingencies, seasonal adjustments, and arrival logistics.</p>
+          <h3 class="h3" style="color:#fff;font-size:clamp(21px,2.5vw,26px)">Every journey begins with a conversation.</h3>
+          <p class="body" style="color:rgba(255,255,255,.72)">Our Resident Curator reviews every enquiry personally and will propose a tailored itinerary within four hours — including weather contingencies, seasonal adjustments, and arrival logistics.</p>
         </div>
 
         <div style="display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)">
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">schedule</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">schedule</span>
             <span class="caption" style="color:rgba(255,255,255,.75)">Response within four hours · 7 days a week</span>
           </div>
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">flight</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">flight</span>
             <span class="caption" style="color:rgba(255,255,255,.75)">Private aviation and moorings arranged on request</span>
           </div>
           <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">translate</span>
+            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px;font-variation-settings:'wght' 400">translate</span>
             <span class="caption" style="color:rgba(255,255,255,.75)">English · Italiano · Français · Deutsch</span>
           </div>
         </div>
@@ -511,13 +506,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="Your name" required/>
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
               <div class="field" style="background:#fff">
                 <input type="email" placeholder="your@email.com" required/>
               </div>
@@ -526,7 +521,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Experience of Interest</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Experience of Interest</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>The Riva Yacht Expedition</option>
@@ -541,7 +536,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Preferred Date</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Preferred Date</label>
               <div class="field" style="background:#fff">
                 <input type="date" value="2025-10-18"/>
               </div>
@@ -550,7 +545,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Party Size</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Party Size</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>1 Guest</option>
@@ -562,7 +557,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Time Preference</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Time Preference</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>Morning</option>
@@ -575,7 +570,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
           </div>
 
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Notes or Special Requests</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Notes or Special Requests</label>
             <div class="field" style="background:#fff;min-height:auto">
               <textarea rows="3" placeholder="Dietary preferences, mobility considerations, celebration details, or bespoke curations..."></textarea>
             </div>
@@ -599,14 +594,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ QUOTE ============ -->
 <section class="quote-strip">
   <div class="container reveal" style="max-width:820px">
-    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:18px">sailing</span>
-    <p class="quote" style="font-size:clamp(18px,2.4vw,24px);margin:0">
+    <span class="material-symbols-outlined" style="font-size:26px;color:var(--accent);display:inline-block;margin-bottom:18px;font-variation-settings:'wght' 400">sailing</span>
+    <p style="font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(18px,2.2vw,24px);line-height:1.5;color:var(--ink-800);margin:0">
       "The yacht left the jetty at dusk, the cliffs turned to amber, and every itinerary we had planned for the rest of the week quietly dissolved."
     </p>
-    <div class="caption" style="margin-top:22px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">
+    <div class="caption" style="margin-top:22px;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">
       Travel + Leisure · Mediterranean Report
     </div>
   </div>
@@ -614,24 +608,23 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -641,13 +634,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -697,703 +690,4 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 </script>
 
 </body>
-                </html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta name="theme-color" content="#fbf9f5"/>
-<title>Experiences · The Falalu</title>
-<meta name="description" content="Bespoke maritime charters, private helicopter journeys, cliffside culinary rituals, and hands-on artisan experiences on the Amalfi Coast."/>
-<meta property="og:title" content="Experiences · The Falalu"/>
-<meta property="og:description" content="Bespoke maritime charters, private helicopter journeys, and hands-on artisan experiences on the Amalfi Coast."/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714285/images_14_tqczhw.jpg"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
-
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-html,body{margin:0;padding:0}
-body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
-img{display:block;max-width:100%;height:auto}
-button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;padding:0}
-a{color:inherit;text-decoration:none}
-ul{list-style:none;padding:0;margin:0}
-::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
-
-:root{
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
-  --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
-  --line:#e8e5df;--line-2:#dcd8d1;
-  --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
-  --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
-  --ease:cubic-bezier(.2,.8,.2,1);
-  --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
-}
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
-
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
-
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
-
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
-.eyebrow.no-rule::before{display:none}
-
-.container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
-.section{padding-block:var(--section-y)}
-.section-sm{padding-block:calc(var(--section-y) * 0.6)}
-
-.grid-2{display:grid;grid-template-columns:1fr;gap:24px}
-.grid-3{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}}
-
-.divider{height:1px;background:var(--line);width:100%}
-
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
-.nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
-.nav-link.is-active{color:var(--ink-900);font-weight:600}
-.nav-link.is-active::after{width:100%}
-
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
-.mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
-.mobile-link.is-active{color:var(--ink-900);font-weight:500}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
-.btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
-.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
-.btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
-.btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
-
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease)}
-.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
-.card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
-.card-plain{background:#fff;border-radius:var(--r-lg)}
-
-.tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
-
-.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
-.badge-accent{background:var(--accent);color:#fff}
-.badge-dark{background:var(--ink-900);color:#fff}
-.badge-glass{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink-800)}
-
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
-
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
-.field:hover{border-color:var(--line-2)}
-.field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
-.field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
-.field select{cursor:pointer}
-
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
-@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
-}
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
-.header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
-@media(min-width:1280px){.header-nav{display:flex}}
-.header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
-@media(min-width:1536px){.header-concierge{display:flex}}
-.header-cta{flex-shrink:0}
-
-.drawer{position:fixed;inset:0;z-index:60;background:var(--paper);display:flex;flex-direction:column;transform:translateX(-100%);transition:transform 400ms var(--ease);padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
-.drawer.is-open{transform:translateX(0)}
-.drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
-
-#curators-day, #enquiry{scroll-margin-top:calc(var(--header-h) + 24px)}
-
-.exp-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid var(--line);margin-top:20px}
-.exp-meta__left{display:flex;flex-direction:column;gap:2px}
-.exp-meta__left .duration{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.exp-meta__left .price{font-family:var(--font-display);font-size:18px;color:var(--ink-900);margin-top:2px}
-
-.day-timeline{display:flex;flex-direction:column;gap:0;position:relative}
-.day-slot{display:flex;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
-.day-slot:last-child{border-bottom:0}
-.day-slot__time{font-family:var(--font-display);font-size:20px;color:var(--ink-900);flex-shrink:0;width:72px;line-height:1.2}
-.day-slot__body{min-width:0;flex:1}
-.day-slot__title{font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--ink-900);margin-bottom:4px}
-.day-slot__desc{font-size:13px;line-height:1.6;color:var(--ink-500)}
-
-.quote-strip{text-align:center;padding-block:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
-@media(min-width:768px){.quote-strip{padding-block:96px}}
-
-.footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
-@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
-@media(min-width:1024px){.footer-grid{grid-template-columns:4fr 3fr 5fr;gap:56px}}
-.footer-bottom{display:flex;flex-direction:column;gap:16px;padding-top:24px}
-@media(min-width:768px){.footer-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
-
-.flex-wrap-gap{display:flex;flex-wrap:wrap;gap:12px}
-.no-scroll{overflow:hidden}
-*{-webkit-tap-highlight-color:transparent}
-
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
-.reveal.is-in{opacity:1;transform:none}
-.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
-.stagger.is-in > *{opacity:1;transform:none}
-.stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:80ms}
-.stagger.is-in > *:nth-child(3){transition-delay:160ms}
-.stagger.is-in > *:nth-child(4){transition-delay:240ms}
-.stagger.is-in > *:nth-child(5){transition-delay:320ms}
-.stagger.is-in > *:nth-child(6){transition-delay:400ms}
-
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
-  .reveal,.stagger > *{opacity:1;transform:none}
-}
-</style>
-</head>
-
-<body>
-
-<!-- ============ HEADER ============ -->
-<header class="site-header">
-  <div class="container site-header__inner">
-    <div class="header-left">
-      <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
-      </button>
-      <a href="index.html" class="header-logo">The Falalu</a>
-    </div>
-    <nav class="header-nav">
-      <a class="nav-link" href="index.html">Overview</a>
-      <a class="nav-link" href="rooms.html">Rooms &amp; Suites</a>
-      <a class="nav-link" href="dining.html">Dining</a>
-      <a class="nav-link is-active" aria-current="page" href="experiences.html">Experiences</a>
-      <a class="nav-link" href="wellness.html">Wellness</a>
-      <a class="nav-link" href="gallery.html">Gallery</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </nav>
-    <div class="header-right">
-      <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
-        <span>Concierge</span>
-      </a>
-      <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
-    </div>
-  </div>
-</header>
-
-<!-- ============ DRAWER ============ -->
-<div id="drawer" class="drawer xl:hidden">
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
-    <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
-      <span class="material-symbols-outlined" style="font-size:22px">close</span>
-    </button>
-  </div>
-  <nav class="container drawer__nav">
-    <a class="mobile-link" href="index.html">Overview</a>
-    <a class="mobile-link" href="rooms.html">Rooms &amp; Suites</a>
-    <a class="mobile-link" href="dining.html">Dining</a>
-    <a class="mobile-link is-active" href="experiences.html">Experiences</a>
-    <a class="mobile-link" href="wellness.html">Wellness</a>
-    <a class="mobile-link" href="gallery.html">Gallery</a>
-    <a class="mobile-link" href="about.html">About</a>
-    <a class="mobile-link" href="contact.html">Contact</a>
-  </nav>
-  <div class="container" style="padding-block:20px 24px;border-top:1px solid var(--line);flex-shrink:0">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
-      <div style="min-width:0">
-        <div class="caption" style="color:var(--ink-400)">Amalfi Coast, Italy</div>
-        <div class="body-sm" style="margin-top:2px">+39 089 871 000</div>
-      </div>
-      <a href="reservations.html" class="btn btn-primary btn-sm" style="flex-shrink:0">Reserve</a>
-    </div>
-  </div>
-</div>
-
-<main style="padding-top:var(--header-h)">
-
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:32px">
-  <div class="reveal">
-    <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
-      <div style="max-width:680px">
-        <span class="eyebrow">Curated Experiences</span>
-        <h1 class="h1" style="margin:16px 0 0 0">Days made<br/>to remember.</h1>
-      </div>
-      <p class="lede" style="max-width:440px">
-        Six signature journeys across sea, sky, and stone — each led by a resident specialist and tailored to your pace. Charters, workshops, and private expeditions arranged through the Concierge desk.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HERO BANNER ============ -->
-<section class="container" style="padding-bottom:64px">
-  <div class="reveal">
-    <div class="tile" style="aspect-ratio:21/9;border-radius:var(--r-lg)">
-      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714285/images_14_tqczhw.jpg"/>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SIGNATURE EXPERIENCES ============ -->
-<section class="section" style="background:var(--paper-2)">
-  <div class="container">
-
-    <div class="reveal" style="max-width:640px;margin-bottom:56px">
-      <span class="eyebrow">The Collection</span>
-      <h2 class="h2" style="margin:16px 0 14px 0">Six signature journeys.</h2>
-      <p class="body">Every experience is led by a resident specialist and hosted in English, Italian, and French. Advance booking recommended for groups of three or more.</p>
-    </div>
-
-    <div class="grid-3 stagger">
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Vintage wooden Riva yacht on calm Mediterranean water at golden hour" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714292/images_15_rdq6bi.jpg"/>
-          <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Maritime</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">The Riva Yacht Expedition</h3>
-          <p class="body-sm" style="margin-top:10px">Glide past ancient sea grottos with cold champagne and freshly caught sea urchin, steered by our seasoned private captain. Depart from THE FALALU's private jetty at dusk.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">Half-Day · Twilight</span>
-              <span class="price">From €1,600</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Turquoise water inside a limestone sea cave along the Amalfi Coast" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714300/images_16_m4zzmg.jpg"/>
-          <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Coastal</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">Blue Grotto &amp; Sea Caves</h3>
-          <p class="body-sm" style="margin-top:10px">A privately guided tender into the lesser-known grottos of the Sorrentine Peninsula — including the Grotta dello Smeraldo and the Bagni della Regina Giovanna.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">Half-Day</span>
-              <span class="price">From €980</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Aerial view of the Amalfi coastline from a private helicopter" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714307/images_17_j963ju.jpg"/>
-          <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Aerial</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">Helicopter Coastal Odyssey</h3>
-          <p class="body-sm" style="margin-top:10px">Depart from our private helipad for a 60-minute sweep of Positano, Capri, Pompeii, and the Amalfi cliffs. Champagne landing on the slopes of Vesuvius available.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">60 Minutes</span>
-              <span class="price">From €2,400</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Terraced Amalfi lemon grove with mature citrus trees and stone retaining walls overlooking the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714331/images_18_cryr5c.jpg"/>
-          <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Botanical</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">Lemon Grove Walk</h3>
-          <p class="body-sm" style="margin-top:10px">A guided morning with our head gardener through the 4.2-hectare terraced groves. Learn the Sfusato Amalfitano cultivation, then press your own limoncello.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">2 Hours · Morning</span>
-              <span class="price">Complimentary</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Candlelit table for two on a cliffside terrace at night, overlooking the dark Mediterranean Sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714337/images_19_pa5kio.jpg"/>
-          <span class="badge badge-accent" style="position:absolute;top:14px;left:14px">Signature</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">Cliffside Celestial Dinner</h3>
-          <p class="body-sm" style="margin-top:10px">A 7-course tasting menu served under open sky, guided by our resident astronomer with a Swarovski telescope and constellation storytelling through the meal.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">Evening · 4 Hours</span>
-              <span class="price">€580 / guest</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="tile" style="aspect-ratio:16/10;border-radius:0">
-          <img alt="Artisan hands shaping a ceramic vessel on a potter's wheel in a sunlit studio" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714348/images_20_fm24q5.jpg"/>
-          <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Artisan</span>
-        </div>
-        <div style="padding:24px">
-          <h3 class="h3" style="font-size:20px;font-weight:500">Ceramics at Vietri</h3>
-          <p class="body-sm" style="margin-top:10px">Private half-day at a fourth-generation Vietri sul Mare studio. Hand-throw your own vessel on the wheel and take home the finished piece — fired, glazed, and shipped.</p>
-          <div class="exp-meta">
-            <div class="exp-meta__left">
-              <span class="duration">Half-Day</span>
-              <span class="price">€420 / guest</span>
-            </div>
-            <a href="#enquiry" class="nav-link" style="color:var(--ink-700)">Enquire →</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============ THE CURATOR'S DAY ============ -->
-<section id="curators-day" class="section">
-  <div class="container">
-    <div class="grid-2" style="gap:48px;align-items:start">
-
-      <div class="reveal">
-        <span class="eyebrow">A Full Day</span>
-        <h2 class="h2" style="margin:16px 0 20px 0">The Curator's Day.</h2>
-        <p class="body" style="margin-bottom:24px">
-          A recommended arc through the property and the coastline — from sunrise on the terrace to a final glass in the cellar vault. Bookable as a complete day, or pick individual elements à la carte.
-        </p>
-
-        <div class="day-timeline">
-          <div class="day-slot">
-            <span class="day-slot__time">07:00</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">Sunrise on your private terrace</div>
-              <p class="day-slot__desc">Coffee and warm sfogliatelle served at first light, with a hand-annotated weather and tide card for the day ahead.</p>
-            </div>
-          </div>
-
-          <div class="day-slot">
-            <span class="day-slot__time">09:30</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">Lemon grove walk with our head gardener</div>
-              <p class="day-slot__desc">Two hours through the terraced Sfusato groves above the property, ending with a private limoncello press.</p>
-            </div>
-          </div>
-
-          <div class="day-slot">
-            <span class="day-slot__time">13:00</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">Al-fresco lunch at the Olive Pergola</div>
-              <p class="day-slot__desc">Four courses of coastal terroir — hand-rolled sourdough, buffalo mozzarella, line-caught fish, wild honeycomb.</p>
-            </div>
-          </div>
-
-          <div class="day-slot">
-            <span class="day-slot__time">15:30</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">Riva yacht departure from the private jetty</div>
-              <p class="day-slot__desc">A four-hour coastal expedition past Positano and the Li Galli archipelago, with a swim stop in a hidden cove.</p>
-            </div>
-          </div>
-
-          <div class="day-slot">
-            <span class="day-slot__time">20:30</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">Cliffside Celestial Dinner</div>
-              <p class="day-slot__desc">Seven courses on the open-air cliff deck, guided by our resident astronomer and his Swarovski telescope.</p>
-            </div>
-          </div>
-
-          <div class="day-slot">
-            <span class="day-slot__time">23:00</span>
-            <div class="day-slot__body">
-              <div class="day-slot__title">A final glass in the Cellar Vault</div>
-              <p class="day-slot__desc">Nightcap of rare Barolo or a coastal amaro, poured by the sommelier on duty. Cigar lounge open until late.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:32px" class="flex-wrap-gap">
-          <a href="#enquiry" class="btn btn-primary btn-lg btn-block-sm">
-            Reserve the Curator's Day
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <span class="chip" style="align-self:center">Full day · From €2,850 per couple</span>
-        </div>
-      </div>
-
-      <div class="reveal">
-        <div class="tile" style="aspect-ratio:4/5">
-          <img alt="A cliffside terrace at The Falalu set for a full day of experiences, with views over the Mediterranean" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714352/images_21_duq7wp.jpg"/>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============ ENQUIRY FORM ============ -->
-<section id="enquiry" class="section" style="background:var(--paper-2)">
-  <div class="container">
-    <div class="grid-2" style="gap:32px;align-items:stretch">
-
-      <div class="reveal" style="background:var(--ink-900);color:#fff;padding:36px 32px;border-radius:var(--r-lg);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
-        <div style="display:flex;flex-direction:column;gap:20px">
-          <span class="eyebrow no-rule" style="color:var(--gold)">Concierge Curation</span>
-          <h3 class="h3" style="color:#fff;font-size:clamp(22px,2.6vw,28px)">Every journey begins with a conversation.</h3>
-          <p class="body" style="color:rgba(255,255,255,.7)">Our Resident Curator reviews every enquiry personally and will propose a tailored itinerary within four hours — including weather contingencies, seasonal adjustments, and arrival logistics.</p>
-        </div>
-
-        <div style="display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)">
-          <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">schedule</span>
-            <span class="caption" style="color:rgba(255,255,255,.75)">Response within four hours · 7 days a week</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">flight</span>
-            <span class="caption" style="color:rgba(255,255,255,.75)">Private aviation and moorings arranged on request</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <span class="material-symbols-outlined" style="color:var(--gold);font-size:18px">translate</span>
-            <span class="caption" style="color:rgba(255,255,255,.75)">English · Italiano · Français · Deutsch</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-flat reveal" style="padding:28px;display:flex;flex-direction:column;justify-content:center">
-        <form onsubmit="event.preventDefault();document.getElementById('exp-confirmation').style.display='flex';this.style.display='none';" style="display:flex;flex-direction:column;gap:16px">
-
-          <div class="grid-2" style="gap:12px">
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
-              <div class="field" style="background:#fff">
-                <input type="text" placeholder="Your name" required/>
-              </div>
-            </div>
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
-              <div class="field" style="background:#fff">
-                <input type="email" placeholder="your@email.com" required/>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-2" style="gap:12px">
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Experience of Interest</label>
-              <div class="field" style="background:#fff">
-                <select>
-                  <option>The Riva Yacht Expedition</option>
-                  <option>Blue Grotto &amp; Sea Caves</option>
-                  <option>Helicopter Coastal Odyssey</option>
-                  <option>Lemon Grove Walk</option>
-                  <option>Cliffside Celestial Dinner</option>
-                  <option>Ceramics at Vietri</option>
-                  <option>The Curator's Day (Full)</option>
-                  <option>Bespoke Multi-Day Curation</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Preferred Date</label>
-              <div class="field" style="background:#fff">
-                <input type="date" value="2025-10-18"/>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-2" style="gap:12px">
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Party Size</label>
-              <div class="field" style="background:#fff">
-                <select>
-                  <option>1 Guest</option>
-                  <option selected>2 Guests</option>
-                  <option>3 Guests</option>
-                  <option>4 Guests</option>
-                  <option>5–8 Guests (Charter)</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Time Preference</label>
-              <div class="field" style="background:#fff">
-                <select>
-                  <option>Morning</option>
-                  <option selected>Afternoon</option>
-                  <option>Sunset / Twilight</option>
-                  <option>Full Day</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Notes or Special Requests</label>
-            <div class="field" style="background:#fff;min-height:auto">
-              <textarea rows="3" placeholder="Dietary preferences, mobility considerations, celebration details, or bespoke curations..."></textarea>
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:4px">
-            Submit Enquiry
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </button>
-          <p class="caption" style="text-align:center;color:var(--ink-400)">No immediate charge · The Curator will respond personally</p>
-        </form>
-
-        <div id="exp-confirmation" style="display:none;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:32px 12px">
-          <span class="material-symbols-outlined" style="font-size:32px;color:var(--accent)">verified</span>
-          <h4 class="h3" style="font-size:20px;font-weight:500">Enquiry Received.</h4>
-          <p class="body-sm" style="max-width:400px">Our Resident Curator will be in touch within four hours with a tailored proposal and weather contingencies.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============ QUOTE ============ -->
-<section class="quote-strip">
-  <div class="container reveal" style="max-width:820px">
-    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:18px">sailing</span>
-    <p class="quote" style="font-size:clamp(18px,2.4vw,24px);margin:0">
-      "The yacht left the jetty at dusk, the cliffs turned to amber, and every itinerary we had planned for the rest of the week quietly dissolved."
-    </p>
-    <div class="caption" style="margin-top:22px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">
-      Travel + Leisure · Mediterranean Report
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
-
-      <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
-        <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
-          <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
-          <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
-        </div>
-      </div>
-
-      <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
-          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
-          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
-          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
-          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Ecological Stewardship</a></li>
-          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Private Aviation</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
-        <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
-        <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
-          <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
-                 onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
-        </form>
-        <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px" class="caption">
-        <span>© 2025 The Falalu Resort &amp; Sanctuary</span>
-        <a href="#" style="color:var(--ink-400)">Privacy</a>
-        <a href="#" style="color:var(--ink-400)">Legal</a>
-      </div>
-      <div style="display:flex;align-items:center;gap:24px">
-        <a class="nav-link" href="#">Instagram</a>
-        <a class="nav-link" href="#">Journal</a>
-        <a class="nav-link" href="#">AD</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  const drawer = document.getElementById('drawer');
-  const body = document.body;
-  function openDrawer(){ drawer.classList.add('is-open'); body.classList.add('no-scroll'); }
-  function closeDrawer(){ drawer.classList.remove('is-open'); body.classList.remove('no-scroll'); }
-  document.querySelectorAll('[data-open-drawer]').forEach(el => el.addEventListener('click', openDrawer));
-  document.querySelectorAll('[data-close-drawer]').forEach(el => el.addEventListener('click', closeDrawer));
-  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
-
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduce && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
-    document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
-  } else {
-    document.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('is-in'));
-  }
-})();
-</script>
-
-</body>
-  </html>
+</html>
