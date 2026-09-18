@@ -7,7 +7,7 @@
 <title>Gallery · The Falalu</title>
 <meta name="description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline on the Amalfi Coast."/>
 <meta property="og:title" content="Gallery · The Falalu"/>
-<meta property="og:description" content="A visual journal of The Falalu."/>
+<meta property="og:description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline."/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789715796/images_22_xk5x1s.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -31,70 +31,77 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
+.eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
-.section{padding-block:var(--section-y)}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-sm{height:38px;padding:0 16px}}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
+.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
+.btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-sm{height:40px;padding:0 16px}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -105,130 +112,102 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
+/* ============ FILTER BAR ============ */
 .filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
-.filter-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;border-radius:var(--r-md);font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap}
+.filter-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;border-radius:var(--r-md);font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap}
 .filter-btn:hover{background:var(--paper-3);color:var(--ink-900)}
 .filter-btn.is-active{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
 .filter-btn .count{font-weight:500;opacity:.6;margin-left:6px;font-size:10px}
 
+/* ============ GALLERY GRID ============ */
 .gallery-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:20px}}
 @media(min-width:1024px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
 
-/* ============================================
-   SKELETON TILE
-   ============================================ */
 .gallery-tile{
-  position:relative;
-  overflow:hidden;
+  position:relative;overflow:hidden;
+  background:var(--paper-3);
   border-radius:var(--r-lg);
   aspect-ratio:4/5;
   cursor:zoom-in;
-  /* The visible "skeleton" base colour */
-  background:#e6e0d3;
 }
-
-/* Moving shimmer band — clearly visible, sweeps across */
-.gallery-tile::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    100deg,
-    rgba(230,224,211,0) 20%,
-    rgba(255,255,255,.55) 50%,
-    rgba(230,224,211,0) 80%
-  );
-  background-size:200% 100%;
-  animation:skeleton-shimmer 1.6s linear infinite;
-  z-index:1;
-  pointer-events:none;
-  transition:opacity 400ms var(--ease);
-}
-
-/* Small pulsing icon + "loading" label so it's unmistakable */
-.gallery-tile::after{
-  content:'image';
-  font-family:'Material Symbols Outlined';
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  font-size:36px;
-  color:rgba(108,91,77,.35);
-  z-index:2;
-  pointer-events:none;
-  animation:skeleton-pulse 2s ease-in-out infinite;
-  transition:opacity 400ms var(--ease);
-}
-
-@keyframes skeleton-shimmer{
-  from{background-position:200% 0}
-  to{background-position:-200% 0}
-}
-@keyframes skeleton-pulse{
-  0%,100%{opacity:.35}
-  50%{opacity:.65}
-}
-
-/* The real image sits on top, hidden until it loads */
 .gallery-tile img{
-  position:relative;
-  z-index:3;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0;
-  transition:opacity 500ms var(--ease),transform 900ms var(--ease);
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 900ms var(--ease);
 }
-
-/* Loaded state — image fades in, skeleton disappears */
-.gallery-tile.is-loaded::before,
-.gallery-tile.is-loaded::after{
-  opacity:0;
-}
-.gallery-tile.is-loaded img{
-  opacity:1;
-}
-
-@media (prefers-reduced-motion: reduce){
-  .gallery-tile::before,
-  .gallery-tile::after{animation:none}
-}
-
 @media(hover:hover){
-  .gallery-tile:hover img{transform:scale(1.06)}
+  .gallery-tile:hover img{transform:scale(1.04)}
   .gallery-tile:hover .gallery-tile__meta{opacity:1;transform:none}
 }
-
 .gallery-tile__meta{
   position:absolute;left:0;right:0;bottom:0;
-  padding:20px;
+  padding:18px;
   background:linear-gradient(180deg,transparent,rgba(10,10,10,.85));
   color:#fff;
-  z-index:4;
   opacity:0;transform:translateY(8px);
   transition:opacity 400ms var(--ease),transform 400ms var(--ease);
   pointer-events:none;
 }
-.gallery-tile__meta .cat{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
-.gallery-tile__meta .title{font-family:var(--font-display);font-weight:400;font-size:16px;line-height:1.3;margin-top:6px}
-@media(hover:none){.gallery-tile__meta{opacity:1;transform:none}}
+.gallery-tile__meta .cat{
+  font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--gold);
+}
+.gallery-tile__meta .title{
+  font-family:var(--font-display);font-weight:400;font-size:16px;line-height:1.3;margin-top:6px;letter-spacing:-0.005em;
+}
+@media(hover:none){
+  .gallery-tile__meta{opacity:1;transform:none}
+}
 
 .gallery-tile.is-hidden{display:none}
 
-.lightbox{position:fixed;inset:0;z-index:200;background:rgba(10,10,10,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity 300ms var(--ease)}
+/* ============ LIGHTBOX ============ */
+.lightbox{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(10,10,10,.94);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  display:none;
+  align-items:center;justify-content:center;
+  padding:24px;
+  opacity:0;
+  transition:opacity 300ms var(--ease);
+}
 .lightbox.is-open{display:flex;opacity:1}
-.lightbox__img{max-width:min(1200px,92vw);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:var(--r-lg);box-shadow:0 40px 80px rgba(0,0,0,.5);transform:scale(.96);transition:transform 300ms var(--ease)}
+.lightbox__img{
+  max-width:min(1200px,92vw);
+  max-height:88vh;
+  width:auto;height:auto;
+  object-fit:contain;
+  border-radius:var(--r-lg);
+  box-shadow:0 40px 80px rgba(0,0,0,.5);
+  transform:scale(.96);
+  transition:transform 300ms var(--ease);
+}
 .lightbox.is-open .lightbox__img{transform:scale(1)}
-.lightbox__close{position:absolute;top:20px;right:20px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:var(--r-md);background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease)}
+.lightbox__close{
+  position:absolute;top:20px;right:20px;
+  width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:var(--r-md);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.15);
+  cursor:pointer;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
 .lightbox__close:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3)}
-.lightbox__close .material-symbols-outlined{font-size:22px}
-.lightbox__caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-align:center;padding:0 16px}
+.lightbox__close .material-symbols-outlined{font-size:22px;font-variation-settings:'wght' 400}
+.lightbox__caption{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.72);
+  font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;
+  text-align:center;padding:0 16px;
+}
 @media(max-width:639px){
   .lightbox__close{top:12px;right:12px;width:40px;height:40px}
   .lightbox__caption{bottom:16px;font-size:11px}
 }
 
+/* ============ FOOTER ============ */
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
 @media(min-width:1024px){.footer-grid{grid-template-columns:4fr 3fr 5fr;gap:56px}}
@@ -239,24 +218,37 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
+.stagger > *{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.stagger.is-in > *{opacity:1;transform:none}
+.stagger.is-in > *:nth-child(1){transition-delay:0ms}
+.stagger.is-in > *:nth-child(2){transition-delay:50ms}
+.stagger.is-in > *:nth-child(3){transition-delay:100ms}
+.stagger.is-in > *:nth-child(4){transition-delay:150ms}
+.stagger.is-in > *:nth-child(5){transition-delay:200ms}
+.stagger.is-in > *:nth-child(6){transition-delay:250ms}
+.stagger.is-in > *:nth-child(7){transition-delay:300ms}
+.stagger.is-in > *:nth-child(8){transition-delay:350ms}
+.stagger.is-in > *:nth-child(9){transition-delay:400ms}
+.stagger.is-in > *:nth-child(10){transition-delay:450ms}
+.stagger.is-in > *:nth-child(11){transition-delay:500ms}
+.stagger.is-in > *:nth-child(12){transition-delay:550ms}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
-  .reveal{opacity:1;transform:none}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
+  .reveal,.stagger > *{opacity:1;transform:none}
 }
 </style>
 </head>
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -272,7 +264,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -280,10 +272,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -311,8 +302,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:40px">
+<section class="container" style="padding-top:48px;padding-bottom:36px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:680px">
@@ -334,107 +324,106 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ GALLERY GRID ============ -->
 <section class="container" style="padding-bottom:var(--section-y)">
-  <div class="gallery-grid" id="gallery-grid">
+  <div class="gallery-grid stagger" id="gallery-grid">
 
     <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · The Falalu">
-      <img alt="The Falalu — architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715796/images_22_xk5x1s.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="The Falalu — architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715796/images_22_xk5x1s.jpg" fetchpriority="high" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">The Falalu</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="dining" data-caption="Dining · L'Atelier Falalu">
-      <img alt="Dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715888/images_28_jjqfnx.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715888/images_28_jjqfnx.jpg" fetchpriority="high" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">L'Atelier Falalu</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Thermal Sanctuary">
-      <img alt="Thermal Sanctuary at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715957/images_32_cwb8k7.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Thermal Sanctuary at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715957/images_32_cwb8k7.jpg" fetchpriority="high" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Thermal Sanctuary</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · On the Water">
-      <img alt="Experiences at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716030/images_1_yhetp8.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Experiences at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716030/images_1_yhetp8.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">On the Water</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Pavilion Wing">
-      <img alt="Architecture — Pavilion Wing" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715803/images_23_sojbw1.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Architecture — Pavilion Wing" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715803/images_23_sojbw1.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Pavilion Wing</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="dining" data-caption="Dining · Plating Detail">
-      <img alt="Plating detail at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715904/images_29_xhgyou.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Plating detail at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715904/images_29_xhgyou.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Plating Detail</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Stone Bodywork">
-      <img alt="Stone bodywork at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715963/images_33_div9ah.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Stone bodywork at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715963/images_33_div9ah.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Stone Bodywork</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Sea Caves">
-      <img alt="Sea caves experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716037/images_2_uhtrbn.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Sea caves experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716037/images_2_uhtrbn.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Sea Caves</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Garden Residence">
-      <img alt="Garden Residence architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715810/images_24_xhahxv.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Garden Residence architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715810/images_24_xhahxv.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Garden Residence</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="dining" data-caption="Dining · The Cellar Vault">
-      <img alt="The Cellar Vault dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715922/images_30_ngwfoa.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="The Cellar Vault dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715922/images_30_ngwfoa.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">The Cellar Vault</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Acoustic Dome">
-      <img alt="Acoustic Dome at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715971/images_34_hmhqqc.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Acoustic Dome at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715971/images_34_hmhqqc.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Acoustic Dome</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Coastal Aerial">
-      <img alt="Coastal aerial experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716041/images_3_qkjv4h.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Coastal aerial experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716041/images_3_qkjv4h.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Coastal Aerial</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Cliff Penthouse">
-      <img alt="Cliff Penthouse architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715819/images_25_d6zm48.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Cliff Penthouse architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715819/images_25_d6zm48.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Cliff Penthouse</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="dining" data-caption="Dining · Al-Fresco">
-      <img alt="Al-fresco dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715932/images_31_r46syv.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Al-fresco dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715932/images_31_r46syv.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Al-Fresco</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Ritual Detail">
-      <img alt="Wellness ritual detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715978/images_35_jcdnpt.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Wellness ritual detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715978/images_35_jcdnpt.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Ritual Detail</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Lemon Grove">
-      <img alt="Lemon grove experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716047/images_4_allowq.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Lemon grove experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716047/images_4_allowq.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Lemon Grove</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Interior Detail">
-      <img alt="Interior architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715827/images_26_o79roi.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Interior architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715827/images_26_o79roi.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Interior Detail</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="dining" data-caption="Dining · Private Pavilion">
-      <img alt="Private Pavilion dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715947/images_27_rcp5u8.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Private Pavilion dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715947/images_27_rcp5u8.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Private Pavilion</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Botanical Ritual">
-      <img alt="Botanical wellness treatment" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715991/images_lyceih.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Botanical wellness treatment" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715991/images_lyceih.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Botanical Ritual</div></figcaption>
     </figure>
 
     <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Twilight">
-      <img alt="Sunset experience at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716051/images_5_q1xfdm.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <img alt="Sunset experience at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716051/images_5_q1xfdm.jpg" loading="lazy" decoding="async" width="800" height="1000"/>
       <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Twilight</div></figcaption>
     </figure>
 
@@ -443,7 +432,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 </main>
 
-<!-- ============ LIGHTBOX ============ -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lightbox__close" id="lightbox-close" aria-label="Close viewer">
     <span class="material-symbols-outlined">close</span>
@@ -452,24 +440,23 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   <div class="lightbox__caption" id="lightbox-caption"></div>
 </div>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -479,13 +466,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -516,7 +503,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   document.querySelectorAll('[data-close-drawer]').forEach(el => el.addEventListener('click', closeDrawer));
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
 
-  // ---------- GALLERY FILTER ----------
+  // Filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const tiles = document.querySelectorAll('.gallery-tile');
 
@@ -540,20 +527,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     });
   });
 
-  // ---------- SKELETON FALLBACK ----------
-  // Inline onload handles most cases. This is a safety net for cached images
-  // (whose onload may have already fired before this script runs).
-  tiles.forEach(tile => {
-    const img = tile.querySelector('img');
-    if (!img) return;
-    if (img.complete && img.naturalWidth > 0) {
-      tile.classList.add('is-loaded');
-    }
-    // If it errors, drop the skeleton anyway
-    img.addEventListener('error', () => tile.classList.add('is-loaded'), { once: true });
-  });
-
-  // ---------- LIGHTBOX ----------
+  // Lightbox
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
@@ -592,7 +566,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     if (e.key === 'Escape') { closeLightbox(); closeDrawer(); }
   });
 
-  // ---------- REVEAL (filter bar only) ----------
+  // Reveal
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
@@ -603,12 +577,12 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         }
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
   } else {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+    document.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('is-in'));
   }
 })();
 </script>
 
 </body>
-  </html>
+</html>
