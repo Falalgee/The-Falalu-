@@ -31,41 +31,42 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
 .eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
@@ -73,57 +74,51 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .section-sm{padding-block:calc(var(--section-y) * 0.6)}
 
 .grid-2{display:grid;grid-template-columns:1fr;gap:24px}
-.grid-3{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}}
 
 .divider{height:1px;background:var(--line);width:100%}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
 .btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
 .btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn-lg{height:50px;padding:0 24px;font-size:12px;letter-spacing:0.12em}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:40px;padding:0 16px}.btn-block-sm{width:100%}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
 .card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
 
-.tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.03)}}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
-
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:58px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
 .field:hover{border-color:var(--line-2)}
 .field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink-400)}
 .field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
 .field select{cursor:pointer}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -134,83 +129,38 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
-/* ============ BOOKING LAYOUT ============ */
+/* ============ BOOKING ============ */
 .booking-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
 @media(min-width:1024px){.booking-grid{grid-template-columns:7fr 5fr;gap:48px}}
 
-/* Summary card (sticky on desktop) */
-.summary-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:var(--r-lg);
-  overflow:hidden;
-}
-@media(min-width:1024px){
-  .summary-card{position:sticky;top:calc(var(--header-h) + 24px)}
-}
-.summary-card__hero{
-  aspect-ratio:4/3;
-  overflow:hidden;
-  background:var(--paper-3);
-}
+.summary-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+@media(min-width:1024px){.summary-card{position:sticky;top:calc(var(--header-h) + 24px)}}
+.summary-card__hero{aspect-ratio:4/3;overflow:hidden;background:var(--paper-3)}
 .summary-card__hero img{width:100%;height:100%;object-fit:cover}
 .summary-card__body{padding:24px}
 
-.summary-row{
-  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  padding:14px 0;
-  border-bottom:1px solid var(--line);
-}
+.summary-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
 .summary-row:last-child{border-bottom:0}
-.summary-row .label{font-size:12px;font-weight:500;color:var(--ink-400);letter-spacing:0.02em}
+.summary-row .label{font-size:12px;font-weight:500;color:var(--ink-400);letter-spacing:0.01em}
 .summary-row .value{font-size:14px;font-weight:500;color:var(--ink-900);text-align:right}
 
-.summary-total{
-  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-  padding:20px 0 0 0;
-  margin-top:8px;
-  border-top:1px solid var(--line-2);
-}
-.summary-total .amount{
-  font-family:var(--font-display);
-  font-size:26px;color:var(--ink-900);letter-spacing:-0.01em;
-}
+.summary-total{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:20px 0 0 0;margin-top:8px;border-top:1px solid var(--line-2)}
+.summary-total .amount{font-family:var(--font-display);font-size:26px;color:var(--ink-900);letter-spacing:-0.01em}
 
-/* Trust strip */
-.trust-strip{
-  display:flex;flex-wrap:wrap;gap:20px 32px;
-  padding:24px 0;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-.trust-item{
-  display:flex;align-items:center;gap:10px;
-  font-size:13px;font-weight:500;color:var(--ink-500);
-}
-.trust-item .material-symbols-outlined{font-size:18px;color:var(--accent);flex-shrink:0}
+.trust-strip{display:flex;flex-wrap:wrap;gap:20px 32px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;color:var(--ink-500)}
+.trust-item .material-symbols-outlined{font-size:18px;color:var(--accent);flex-shrink:0;font-variation-settings:'wght' 400}
 
-/* Step numbers */
-.step-title{
-  display:flex;align-items:center;gap:14px;
-  margin-bottom:20px;
-}
-.step-title .num{
-  width:32px;height:32px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:50%;
-  background:var(--ink-900);color:#fff;
-  font-size:12px;font-weight:600;
-  flex-shrink:0;
-}
-.step-title .label{
-  font-family:var(--font-display);
-  font-weight:500;font-size:20px;color:var(--ink-900);
-  letter-spacing:-0.01em;
-}
+.step-title{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.step-title .num{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--ink-900);color:#fff;font-size:12px;font-weight:600;flex-shrink:0}
+.step-title .label{font-family:var(--font-display);font-weight:500;font-size:20px;color:var(--ink-900);letter-spacing:-0.008em}
 
-.pull-quote{padding-block:80px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
-@media(min-width:768px){.pull-quote{padding-block:96px}}
-.pull-quote blockquote{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(18px,2.4vw,24px);line-height:1.5;color:var(--ink-800);margin:0 auto;max-width:720px}
+.res-option{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease)}
+.res-option:hover{border-color:var(--line-2)}
+
+.pull-quote{padding-block:72px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+@media(min-width:768px){.pull-quote{padding-block:88px}}
+.pull-quote blockquote{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(18px,2.2vw,24px);line-height:1.5;color:var(--ink-800);margin:0 auto;max-width:720px}
 
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
@@ -222,11 +172,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 900ms var(--ease),transform 900ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
   .reveal{opacity:1;transform:none}
 }
 </style>
@@ -234,12 +184,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -255,7 +204,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -263,10 +212,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -294,8 +242,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:40px">
+<section class="container" style="padding-top:48px;padding-bottom:36px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:680px">
@@ -308,7 +255,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </div>
   </div>
 
-  <div class="trust-strip reveal" style="margin-top:40px">
+  <div class="trust-strip reveal" style="margin-top:36px">
     <div class="trust-item">
       <span class="material-symbols-outlined">verified_user</span>
       <span>Best rate guaranteed direct</span>
@@ -332,14 +279,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ BOOKING FORM ============ -->
 <section class="container section-sm" style="padding-bottom:var(--section-y)">
   <div class="booking-grid">
 
-    <!-- LEFT: Form -->
     <div class="reveal" style="display:flex;flex-direction:column;gap:40px">
 
-      <!-- Step 1: Dates -->
       <div>
         <div class="step-title">
           <span class="num">1</span>
@@ -348,13 +292,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
         <div class="grid-2" style="gap:16px">
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Arrival</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Arrival</label>
             <div class="field" style="background:#fff">
               <input type="date" id="checkin" value="2025-10-18"/>
             </div>
           </div>
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Departure</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Departure</label>
             <div class="field" style="background:#fff">
               <input type="date" id="checkout" value="2025-10-22"/>
             </div>
@@ -363,7 +307,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
         <div class="grid-2" style="gap:16px;margin-top:16px">
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Guests</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Guests</label>
             <div class="field" style="background:#fff">
               <select id="guests">
                 <option>1 Adult</option>
@@ -376,7 +320,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
             </div>
           </div>
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Nights</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Nights</label>
             <div class="field" style="background:#fff;justify-content:center">
               <span id="nights-display" style="font-size:15px;font-weight:500;color:var(--ink-900)">4 nights</span>
             </div>
@@ -384,7 +328,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         </div>
       </div>
 
-      <!-- Step 2: Residence -->
       <div>
         <div class="step-title">
           <span class="num">2</span>
@@ -393,58 +336,54 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
         <div style="display:flex;flex-direction:column;gap:12px">
 
-          <!-- Residence option 1 -->
-          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+          <label class="res-option">
             <input type="radio" name="residence" value="falalu" data-price="1850" data-name="The Falalu Suite" checked style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
             <div style="flex:1;min-width:0">
-              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Cliffside · Sunset Vista · 85 m²</div>
-              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">The Falalu Suite</div>
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Cliffside · Sunset Vista · 85 m²</div>
+              <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink-900);margin-top:6px;letter-spacing:-0.005em">The Falalu Suite</div>
               <p class="body-sm" style="margin-top:6px">Signature residence. Private cliff terrace, outdoor rain shower, hand-carved stone bath.</p>
             </div>
             <div style="text-align:right;flex-shrink:0">
-              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$1,850</div>
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900);letter-spacing:-0.005em">$1,850</div>
               <div class="caption" style="color:var(--ink-400)">per night</div>
             </div>
           </label>
 
-          <!-- Residence option 2 -->
-          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+          <label class="res-option">
             <input type="radio" name="residence" value="master" data-price="2400" data-name="The Master Pavilion Suite" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
             <div style="flex:1;min-width:0">
-              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Pavilion Wing · Ocean Facing · 110 m²</div>
-              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">The Master Pavilion Suite</div>
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Pavilion Wing · Ocean Facing · 110 m²</div>
+              <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink-900);margin-top:6px;letter-spacing:-0.005em">The Master Pavilion Suite</div>
               <p class="body-sm" style="margin-top:6px">Featured suite. Infinity plunge pool, wellness pantry, sheltered daybed loggia.</p>
             </div>
             <div style="text-align:right;flex-shrink:0">
-              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$2,400</div>
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900);letter-spacing:-0.005em">$2,400</div>
               <div class="caption" style="color:var(--ink-400)">per night</div>
             </div>
           </label>
 
-          <!-- Residence option 3 -->
-          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+          <label class="res-option">
             <input type="radio" name="residence" value="garden" data-price="1420" data-name="Garden Residence" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
             <div style="flex:1;min-width:0">
-              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Botanical Wing · Private Enclosure · 72 m²</div>
-              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">Garden Residence</div>
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Botanical Wing · Private Enclosure · 72 m²</div>
+              <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink-900);margin-top:6px;letter-spacing:-0.005em">Garden Residence</div>
               <p class="body-sm" style="margin-top:6px">Olive grove courtyard, outdoor rain shower, linen reading cabana.</p>
             </div>
             <div style="text-align:right;flex-shrink:0">
-              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$1,420</div>
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900);letter-spacing:-0.005em">$1,420</div>
               <div class="caption" style="color:var(--ink-400)">per night</div>
             </div>
           </label>
 
-          <!-- Residence option 4 -->
-          <label class="res-option card-flat" style="padding:20px;display:flex;gap:16px;align-items:center;cursor:pointer;transition:border-color 200ms ease">
+          <label class="res-option">
             <input type="radio" name="residence" value="penthouse" data-price="4200" data-name="Cliff Penthouse Villa" style="flex-shrink:0;width:18px;height:18px;accent-color:var(--ink-900)"/>
             <div style="flex:1;min-width:0">
-              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Highest Tier · Unrestricted Seclusion · 160 m²</div>
-              <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:17px;margin-top:6px">Cliff Penthouse Villa</div>
+              <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Highest Tier · Unrestricted Seclusion · 160 m²</div>
+              <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink-900);margin-top:6px;letter-spacing:-0.005em">Cliff Penthouse Villa</div>
               <p class="body-sm" style="margin-top:6px">Crown villa. Two master suites, private wine vault, roof observatory.</p>
             </div>
             <div style="text-align:right;flex-shrink:0">
-              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900)">$4,200</div>
+              <div style="font-family:var(--font-display);font-size:18px;color:var(--ink-900);letter-spacing:-0.005em">$4,200</div>
               <div class="caption" style="color:var(--ink-400)">per night</div>
             </div>
           </label>
@@ -452,7 +391,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         </div>
       </div>
 
-      <!-- Step 3: Guest details -->
       <div>
         <div class="step-title">
           <span class="num">3</span>
@@ -463,13 +401,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:16px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="Your name" required/>
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
               <div class="field" style="background:#fff">
                 <input type="email" placeholder="your@email.com" required/>
               </div>
@@ -478,13 +416,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:16px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Phone</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Phone</label>
               <div class="field" style="background:#fff">
                 <input type="tel" placeholder="+39 ..." required/>
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Country of Residence</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Country of Residence</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="e.g. United Kingdom"/>
               </div>
@@ -492,7 +430,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
           </div>
 
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Special Requests or Notes</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Special Requests or Notes</label>
             <div class="field" style="background:#fff;min-height:auto">
               <textarea rows="4" placeholder="Arrival time, dietary preferences, celebrations, mobility considerations, or anything else we should know..."></textarea>
             </div>
@@ -515,7 +453,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     </div>
 
-    <!-- RIGHT: Summary card -->
     <aside class="reveal">
       <div class="summary-card">
 
@@ -526,7 +463,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         <div class="summary-card__body">
 
           <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:20px">
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Your Stay Summary</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Your Stay Summary</span>
             <h3 class="h3" id="summary-residence" style="font-size:20px;font-weight:500;margin-top:4px">The Falalu Suite</h3>
           </div>
 
@@ -554,7 +491,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
           </div>
 
           <div class="summary-total">
-            <span class="caption" style="color:var(--ink-700);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Estimated Total</span>
+            <span class="caption" style="color:var(--ink-700);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Estimated Total</span>
             <span class="amount" id="summary-total">$7,400</span>
           </div>
 
@@ -567,7 +504,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ CONCIERGE FALLBACK ============ -->
 <section class="container section-sm" style="padding-bottom:var(--section-y)">
   <div class="reveal" style="background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px 28px;display:flex;flex-direction:column;gap:24px;align-items:flex-start">
     <div style="max-width:640px">
@@ -588,14 +524,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ QUOTE ============ -->
 <section class="pull-quote">
   <div class="container reveal" style="max-width:720px">
-    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:22px">key</span>
+    <span class="material-symbols-outlined" style="font-size:26px;color:var(--accent);display:inline-block;margin-bottom:20px;font-variation-settings:'wght' 400">key</span>
     <blockquote>
       "Booked direct, arrived by tender at dusk, and by the time we reached our terrace the bath had already been drawn."
     </blockquote>
-    <div class="caption" style="margin-top:24px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">
+    <div class="caption" style="margin-top:24px;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">
       Guest Ledger · Returned 2024
     </div>
   </div>
@@ -603,24 +538,23 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -630,13 +564,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -668,7 +602,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
 
-  // ---------- LIVE SUMMARY ----------
   const checkin = document.getElementById('checkin');
   const checkout = document.getElementById('checkout');
   const guests = document.getElementById('guests');
@@ -732,24 +665,22 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
   update();
 
-  // Highlight the selected residence card
   function refreshResidenceStyles(){
     residenceRadios.forEach(r => {
       const label = r.closest('label');
       if (!label) return;
       if (r.checked) {
         label.style.borderColor = 'var(--ink-900)';
-        label.style.background = '#fff';
+        label.style.boxShadow = 'var(--sh-md)';
       } else {
         label.style.borderColor = 'var(--line)';
-        label.style.background = '#fff';
+        label.style.boxShadow = 'none';
       }
     });
   }
   residenceRadios.forEach(r => r.addEventListener('change', refreshResidenceStyles));
   refreshResidenceStyles();
 
-  // ---------- REVEAL ----------
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
@@ -768,4 +699,4 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 </script>
 
 </body>
-            </html>
+</html>
