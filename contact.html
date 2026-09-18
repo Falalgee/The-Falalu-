@@ -31,41 +31,42 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
 .eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
@@ -79,51 +80,51 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 .divider{height:1px;background:var(--line);width:100%}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
 .btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
 .btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn-lg{height:50px;padding:0 24px;font-size:12px;letter-spacing:0.12em}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:40px;padding:0 16px}.btn-block-sm{width:100%}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
 .card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
 
 .tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 800ms var(--ease)}
 @media(hover:hover){.tile:hover img{transform:scale(1.03)}}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:58px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
 .field:hover{border-color:var(--line-2)}
 .field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink-400)}
 .field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
 .field select{cursor:pointer}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -135,60 +136,24 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
 /* Contact method card */
-.contact-card{
-  display:flex;flex-direction:column;gap:16px;
-  padding:28px 24px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:var(--r-lg);
-  transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease);
-}
-.contact-card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
-.contact-card .icon-wrap{
-  width:44px;height:44px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:var(--r-md);
-  background:var(--paper-2);
-  color:var(--accent);
-  overflow:hidden;
-}
+.contact-card{display:flex;flex-direction:column;gap:16px;padding:26px 22px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease)}
+.contact-card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-1px)}
+.contact-card .icon-wrap{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:var(--r-md);background:var(--paper-2);color:var(--accent);overflow:hidden}
 .contact-card .icon-wrap .material-symbols-outlined{font-size:22px;font-variation-settings:'wght' 400}
-.contact-card .label{
-  font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--accent);
-}
-.contact-card .value{
-  font-family:var(--font-display);font-weight:500;font-size:18px;
-  color:var(--ink-900);
-  word-break:break-word;
-}
+.contact-card .label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.contact-card .value{font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--ink-900);word-break:break-word;letter-spacing:-0.005em}
 .contact-card .note{font-size:13px;line-height:1.55;color:var(--ink-500)}
 
-/* Hours row */
-.hours-row{
-  display:flex;flex-direction:column;gap:6px;
-  padding:18px 0;
-  border-bottom:1px solid var(--line);
-}
+.hours-row{display:flex;flex-direction:column;gap:6px;padding:18px 0;border-bottom:1px solid var(--line)}
 .hours-row:last-child{border-bottom:0}
-@media(min-width:640px){
-  .hours-row{flex-direction:row;align-items:baseline;justify-content:space-between;gap:32px}
-}
+@media(min-width:640px){.hours-row{flex-direction:row;align-items:baseline;justify-content:space-between;gap:32px}}
 
-/* Location map placeholder */
-.location-frame{
-  position:relative;
-  aspect-ratio:21/9;
-  border-radius:var(--r-lg);
-  overflow:hidden;
-  background:var(--paper-3);
-  border:1px solid var(--line);
-}
+.location-frame{position:relative;aspect-ratio:21/9;border-radius:var(--r-lg);overflow:hidden;background:var(--paper-3);border:1px solid var(--line)}
 @media(min-width:640px){.location-frame{aspect-ratio:3/1}}
 
-.pull-quote{padding-block:80px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
-@media(min-width:768px){.pull-quote{padding-block:112px}}
-.pull-quote blockquote{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(20px,2.8vw,30px);line-height:1.45;color:var(--ink-800);margin:0 auto;max-width:820px}
+.pull-quote{padding-block:72px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+@media(min-width:768px){.pull-quote{padding-block:96px}}
+.pull-quote blockquote{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:clamp(20px,2.6vw,28px);line-height:1.45;color:var(--ink-800);margin:0 auto;max-width:820px}
 
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
@@ -200,18 +165,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 900ms var(--ease),transform 900ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
-
-.stagger > *{opacity:0;transform:translateY(24px);transition:opacity 900ms var(--ease),transform 900ms var(--ease)}
+.stagger > *{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
 .stagger.is-in > *{opacity:1;transform:none}
 .stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:90ms}
-.stagger.is-in > *:nth-child(3){transition-delay:180ms}
-.stagger.is-in > *:nth-child(4){transition-delay:270ms}
+.stagger.is-in > *:nth-child(2){transition-delay:70ms}
+.stagger.is-in > *:nth-child(3){transition-delay:140ms}
+.stagger.is-in > *:nth-child(4){transition-delay:210ms}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
   .reveal,.stagger > *{opacity:1;transform:none}
 }
 </style>
@@ -219,12 +183,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -240,7 +203,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -248,10 +211,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -279,8 +241,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:40px">
+<section class="container" style="padding-top:48px;padding-bottom:36px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:680px">
@@ -294,7 +255,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ CONTACT METHODS ============ -->
 <section class="container" style="padding-bottom:var(--section-y)">
   <div class="grid-3 stagger">
 
@@ -334,12 +294,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ MAIN CONTACT GRID ============ -->
 <section class="section" style="background:var(--paper-2)">
   <div class="container">
     <div class="grid-2" style="gap:32px;align-items:stretch">
 
-      <!-- Left: info panel -->
       <div class="reveal" style="display:flex;flex-direction:column;gap:32px">
 
         <div style="display:flex;flex-direction:column;gap:16px">
@@ -350,29 +308,29 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
         <div>
           <div class="hours-row">
-            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px">Concierge &amp; Reservations</span>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">24 Hours · 7 Days</span>
+            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px;letter-spacing:-0.005em">Concierge &amp; Reservations</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">24 Hours · 7 Days</span>
           </div>
           <div class="hours-row">
-            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px">Dining Enquiries</span>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">07:00 – 23:00 CET</span>
+            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px;letter-spacing:-0.005em">Dining Enquiries</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">07:00 – 23:00 CET</span>
           </div>
           <div class="hours-row">
-            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px">Spa &amp; Wellness</span>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">08:00 – 21:00 CET</span>
+            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px;letter-spacing:-0.005em">Spa &amp; Wellness</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">08:00 – 21:00 CET</span>
           </div>
           <div class="hours-row">
-            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px">Private Aviation &amp; Moorings</span>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">By Arrangement</span>
+            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px;letter-spacing:-0.005em">Private Aviation &amp; Moorings</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">By Arrangement</span>
           </div>
           <div class="hours-row">
-            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px">Press &amp; Editorial</span>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Mon – Fri</span>
+            <span class="h4" style="font-family:var(--font-display);font-weight:500;font-size:16px;letter-spacing:-0.005em">Press &amp; Editorial</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Mon – Fri</span>
           </div>
         </div>
 
         <div class="card-flat" style="padding:24px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Postal Address</div>
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Postal Address</div>
           <p class="body-sm" style="margin-top:10px;color:var(--ink-700);line-height:1.7">
             The Falalu Resort &amp; Sanctuary<br/>
             Via Costiera Amalfitana 42<br/>
@@ -382,8 +340,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       </div>
 
-      <!-- Right: contact form -->
-      <div class="card-flat reveal" style="padding:32px;display:flex;flex-direction:column;justify-content:center">
+      <div class="card-flat reveal" style="padding:28px;display:flex;flex-direction:column;justify-content:center">
         <form onsubmit="event.preventDefault();document.getElementById('contact-confirmation').style.display='flex';this.style.display='none';" style="display:flex;flex-direction:column;gap:16px">
 
           <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:8px">
@@ -393,13 +350,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Full Name</label>
               <div class="field" style="background:#fff">
                 <input type="text" placeholder="Your name" required/>
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Email Address</label>
               <div class="field" style="background:#fff">
                 <input type="email" placeholder="your@email.com" required/>
               </div>
@@ -408,7 +365,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
           <div class="grid-2" style="gap:12px">
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Subject</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Subject</label>
               <div class="field" style="background:#fff">
                 <select>
                   <option>General Enquiry</option>
@@ -422,7 +379,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               </div>
             </div>
             <div>
-              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Phone (optional)</label>
+              <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Phone (optional)</label>
               <div class="field" style="background:#fff">
                 <input type="tel" placeholder="+39 ..."/>
               </div>
@@ -430,7 +387,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
           </div>
 
           <div>
-            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px;margin-bottom:8px">Message</label>
+            <label class="caption" style="display:block;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px;margin-bottom:8px">Message</label>
             <div class="field" style="background:#fff;min-height:auto">
               <textarea rows="5" placeholder="Tell us what you need — dates, requests, or a brief note..." required></textarea>
             </div>
@@ -454,9 +411,8 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ LOCATION ============ -->
 <section class="container section">
-  <div class="reveal" style="margin-bottom:32px">
+  <div class="reveal" style="margin-bottom:28px">
     <span class="eyebrow">Location</span>
     <h2 class="h2" style="margin-top:14px">Getting here.</h2>
     <p class="body" style="margin-top:14px;max-width:640px">
@@ -467,64 +423,62 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   <div class="location-frame reveal">
     <img alt="Map of the Amalfi Coast region showing The Falalu's location near Amalfi" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1600,h_533,g_auto,q_auto,f_auto/v1789714307/images_17_j963ju.jpg" loading="lazy" decoding="async" width="1600" height="533" style="width:100%;height:100%;object-fit:cover"/>
     <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 24px;background:linear-gradient(180deg,transparent,rgba(10,10,10,.75));color:#fff">
-      <div class="caption" style="color:var(--gold);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">The Falalu · Amalfi Coast</div>
-      <div style="font-family:var(--font-display);font-size:18px;margin-top:4px;font-weight:400">Via Costiera Amalfitana 42, 84011 Amalfi SA</div>
+      <div class="caption" style="color:var(--gold);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">The Falalu · Amalfi Coast</div>
+      <div style="font-family:var(--font-display);font-size:18px;margin-top:4px;font-weight:400;letter-spacing:-0.005em">Via Costiera Amalfitana 42, 84011 Amalfi SA</div>
     </div>
   </div>
 
   <div class="grid-3 stagger" style="margin-top:24px">
     <div class="card-flat" style="padding:24px">
-      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent)">flight</span>
-      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px">By Helicopter</div>
+      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent);font-variation-settings:'wght' 400">flight</span>
+      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px;letter-spacing:-0.005em">By Helicopter</div>
       <p class="body-sm" style="margin-top:8px">Private heliport on-site. Naples Capodichino transfer in ~25 minutes. Landing arrangements via the concierge desk.</p>
     </div>
     <div class="card-flat" style="padding:24px">
-      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent)">directions_boat</span>
-      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px">By Sea</div>
+      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent);font-variation-settings:'wght' 400">directions_boat</span>
+      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px;letter-spacing:-0.005em">By Sea</div>
       <p class="body-sm" style="margin-top:8px">Dedicated mooring at Amalfi Marina. Private tender from the property's jetty, or tender service arranged on arrival.</p>
     </div>
     <div class="card-flat" style="padding:24px">
-      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent)">directions_car</span>
-      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px">By Road</div>
+      <span class="material-symbols-outlined" style="font-size:22px;color:var(--accent);font-variation-settings:'wght' 400">directions_car</span>
+      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px;margin-top:14px;letter-spacing:-0.005em">By Road</div>
       <p class="body-sm" style="margin-top:8px">Chauffeured transfer from Naples (~90 min) or Rome (~3 hours). Valet parking available for arriving guests.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ PULL QUOTE ============ -->
 <section class="pull-quote">
   <div class="container reveal" style="max-width:820px">
-    <span class="material-symbols-outlined" style="font-size:28px;color:var(--accent);display:inline-block;margin-bottom:22px">support_agent</span>
+    <span class="material-symbols-outlined" style="font-size:26px;color:var(--accent);display:inline-block;margin-bottom:20px;font-variation-settings:'wght' 400">support_agent</span>
     <blockquote>
       "There is no script. When you call, you speak with someone who knows the property, the season, and the weather that day."
     </blockquote>
-    <div style="margin-top:28px">
-      <div class="h4" style="font-family:var(--font-display);font-weight:500;font-size:18px">Giulia Mancini</div>
-      <div class="caption" style="margin-top:6px;color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Head Concierge · The Falalu</div>
+    <div style="margin-top:26px">
+      <div style="font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--ink-900)">Giulia Mancini</div>
+      <div class="caption" style="margin-top:6px;color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Head Concierge · The Falalu</div>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -534,13 +488,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -590,4 +544,4 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 </script>
 
 </body>
-        </html>
+</html>
