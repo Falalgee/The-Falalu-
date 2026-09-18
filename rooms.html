@@ -9,12 +9,13 @@
 <meta property="og:title" content="Rooms &amp; Suites · The Falalu"/>
 <meta property="og:description" content="28 private pavilions, terrace suites, garden residences, and pool villas on the Amalfi Coast."/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 
@@ -30,41 +31,42 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;paddin
 a{color:inherit;text-decoration:none}
 ul{list-style:none;padding:0;margin:0}
 ::-webkit-scrollbar{display:none}
-:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:var(--r-sm)}
 
 :root{
   --font-display:'Playfair Display',Georgia,serif;
   --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
   --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
-  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --ink-hover:#232120;
+  --paper:#fbf9f5;--paper-2:#f2efe8;--paper-3:#eae6dd;--paper-4:#e2ddd1;
   --line:#e8e5df;--line-2:#dcd8d1;
   --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
   --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
-  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
-  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
-  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --sh-sm:0 1px 2px rgba(20,15,10,.04);
+  --sh-md:0 3px 10px rgba(20,15,10,.05),0 1px 3px rgba(20,15,10,.03);
+  --sh-lg:0 14px 36px rgba(20,15,10,.07),0 4px 10px rgba(20,15,10,.03);
   --ease:cubic-bezier(.2,.8,.2,1);
   --dur:200ms;--dur-2:300ms;
-  --section-y:64px;--container-x:20px;--header-h:64px;
+  --section-y:56px;--container-x:20px;--header-h:64px;
 }
-@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
-@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
-@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+@media(min-width:640px){:root{--section-y:80px;--container-x:32px;--header-h:66px}}
+@media(min-width:1024px){:root{--section-y:104px;--container-x:48px;--header-h:70px}}
+@media(min-width:1440px){:root{--section-y:120px;--container-x:56px}}
 
-body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+body{font-family:var(--font-sans);font-size:15px;line-height:1.65;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
-.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
-.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
-.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
-.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
-.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
-.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,6.4vw,64px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-0.02em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,4vw,34px);line-height:1.18;letter-spacing:-0.018em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.6vw,24px);line-height:1.28;letter-spacing:-0.008em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.4;letter-spacing:-0.005em;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.7;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.65;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.01em;color:var(--ink-400)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.55}
 .eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
@@ -79,60 +81,59 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 .divider{height:1px;background:var(--line);width:100%}
 
-.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
-.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 240ms var(--ease)}
 .nav-link:hover{color:var(--ink-900)}
-.nav-link:hover::after{width:60%}
+.nav-link:hover::after{width:50%}
 .nav-link.is-active{color:var(--ink-900);font-weight:600}
 .nav-link.is-active::after{width:100%}
 
-.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(21px,5vw,26px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
 .mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
 .mobile-link.is-active{color:var(--ink-900);font-weight:500}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.11em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
-.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-hover)}
 .btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.045)}
 .btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
-.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn-lg{height:50px;padding:0 24px;font-size:12px;letter-spacing:0.12em}
+.btn-sm{height:34px;padding:0 14px;font-size:10px;letter-spacing:0.13em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:40px;padding:0 16px}.btn-block-sm{width:100%}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
 
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),transform var(--dur-2) var(--ease)}
-.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-2px)}
+.card:hover{border-color:var(--line-2);box-shadow:var(--sh-md);transform:translateY(-1px)}
 .card-flat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg)}
-.card-plain{background:#fff;border-radius:var(--r-lg)}
 
 .tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 800ms var(--ease)}
+@media(hover:hover){.tile:hover img{transform:scale(1.03)}}
 
-.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-600)}
 .badge-accent{background:var(--accent);color:#fff}
 .badge-dark{background:var(--ink-900);color:#fff}
 .badge-glass{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink-800)}
 
-.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
-.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:60px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.field{display:flex;flex-direction:column;gap:6px;background:var(--paper-2);border:1px solid transparent;border-radius:var(--r-md);padding:12px 14px;min-height:58px;transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease)}
 .field:hover{border-color:var(--line-2)}
 .field:focus-within{background:#fff;border-color:var(--ink-900)}
-.field label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400)}
-.field input,.field select{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0}
+.field label{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink-400)}
+.field input,.field select,.field textarea{width:100%;background:transparent;border:0;padding:0;font-family:var(--font-sans);font-size:14px;font-weight:500;color:var(--ink-900);outline:none;min-width:0;resize:none}
 .field select{cursor:pointer}
 .field .icon{color:var(--ink-300);font-size:18px;flex-shrink:0}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
-  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+  .site-header{background:rgba(251,249,245,.92);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
 }
-.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.4vw,28px);height:var(--header-h);min-width:0}
 .header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
-.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1vw,20px);flex:1 1 auto;justify-content:center;min-width:0}
 @media(min-width:1280px){.header-nav{display:flex}}
 .header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
@@ -143,14 +144,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
+#suite-spotlight{scroll-margin-top:calc(var(--header-h) + 24px)}
+
 .filter-tabs{display:flex;flex-wrap:wrap;gap:8px}
-.filter-tab{
-  display:inline-flex;align-items:center;justify-content:center;
-  height:40px;padding:0 18px;border-radius:var(--r-md);
-  font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;
-  transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap;
-}
+.filter-tab{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;border-radius:var(--r-md);font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap}
 .filter-tab:hover{background:var(--paper-3);color:var(--ink-900)}
 .filter-tab.is-active{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
 .filter-tab .count{font-weight:500;opacity:.6;margin-left:6px}
@@ -163,7 +160,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 @media(min-width:1024px){.spotlight-grid{grid-template-columns:7fr 5fr;gap:40px}}
 
 .floorplan{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px}
-@media(min-width:768px){.floorplan{padding:32px}}
+@media(min-width:768px){.floorplan{padding:28px}}
 .floorplan__canvas{background:#fff;border-radius:var(--r-md);padding:20px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;border:1px solid var(--line)}
 
 .spec-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
@@ -193,17 +190,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
 .reveal.is-in{opacity:1;transform:none}
-.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.stagger > *{opacity:0;transform:translateY(20px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
 .stagger.is-in > *{opacity:1;transform:none}
 .stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:80ms}
-.stagger.is-in > *:nth-child(3){transition-delay:160ms}
-.stagger.is-in > *:nth-child(4){transition-delay:240ms}
+.stagger.is-in > *:nth-child(2){transition-delay:70ms}
+.stagger.is-in > *:nth-child(3){transition-delay:140ms}
+.stagger.is-in > *:nth-child(4){transition-delay:210ms}
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
   .reveal,.stagger > *{opacity:1;transform:none}
 }
 </style>
@@ -211,12 +208,11 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <body>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="header-left">
       <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
-        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+        <span class="material-symbols-outlined" style="font-size:22px;font-variation-settings:'wght' 400">menu</span>
       </button>
       <a href="index.html" class="header-logo">The Falalu</a>
     </div>
@@ -232,7 +228,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </nav>
     <div class="header-right">
       <a href="tel:+39089871000" class="header-concierge">
-        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'wght' 400">call</span>
         <span>Concierge</span>
       </a>
       <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
@@ -240,10 +236,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </header>
 
-<!-- ============ DRAWER ============ -->
 <div id="drawer" class="drawer xl:hidden">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
-    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
     <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
       <span class="material-symbols-outlined" style="font-size:22px">close</span>
     </button>
@@ -271,8 +266,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <main style="padding-top:var(--header-h)">
 
-<!-- ============ PAGE INTRO ============ -->
-<section class="container" style="padding-top:56px;padding-bottom:32px">
+<section class="container" style="padding-top:48px;padding-bottom:28px">
   <div class="reveal">
     <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
       <div style="max-width:640px">
@@ -285,7 +279,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </div>
   </div>
 
-  <div class="filter-tabs reveal" style="margin-top:40px" role="tablist" aria-label="Residence filters">
+  <div class="filter-tabs reveal" style="margin-top:36px" role="tablist" aria-label="Residence filters">
     <button class="filter-tab is-active" data-filter-tab aria-pressed="true">All Pavilions <span class="count">(28)</span></button>
     <button class="filter-tab" data-filter-tab aria-pressed="false">Terrace Suites <span class="count">(10)</span></button>
     <button class="filter-tab" data-filter-tab aria-pressed="false">Garden Residences <span class="count">(8)</span></button>
@@ -293,16 +287,14 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ HERO BANNER ============ -->
-<section class="container" style="padding-bottom:64px">
+<section class="container" style="padding-bottom:56px">
   <div class="reveal">
     <div class="tile" style="aspect-ratio:21/9;border-radius:var(--r-lg)">
-      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
+      <img alt="" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1920,h_820,g_auto,q_auto,f_auto/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg" fetchpriority="high" decoding="async" width="1920" height="820"/>
     </div>
   </div>
 </section>
 
-<!-- ============ ACCOMMODATION GRID ============ -->
 <section class="container section-sm" style="padding-bottom:var(--section-y)">
   <div class="section-head reveal" style="display:flex;flex-direction:column;gap:16px;margin-bottom:40px">
     <div style="display:flex;flex-direction:column;gap:6px">
@@ -316,17 +308,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <article class="card">
       <div class="tile" style="aspect-ratio:3/2;border-radius:0">
-        <img alt="Master Pavilion Suite — floating walnut bed frame, warm cove lighting, private outdoor deck with stone sun loungers and infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709379/b117775f-f32b-4b64-b072-6a62b01f88f6-1024x683_dj7t2x.jpg"/>
+        <img alt="Master Pavilion Suite — floating walnut bed frame, warm cove lighting, private outdoor deck with stone sun loungers and infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_600,g_auto,q_auto,f_auto/v1789709379/b117775f-f32b-4b64-b072-6a62b01f88f6-1024x683_dj7t2x.jpg" decoding="async" width="900" height="600"/>
         <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Featured Suite</span>
       </div>
-      <div style="padding:24px">
+      <div style="padding:22px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px">
           <div style="min-width:0">
-            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.14em;font-size:10px;font-weight:600">Pavilion Wing · Ocean Facing</div>
-            <h3 class="h3" style="margin-top:8px;font-size:clamp(20px,2.4vw,24px)">The Master Pavilion Suite</h3>
+            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.13em;font-size:10px;font-weight:600">Pavilion Wing · Ocean Facing</div>
+            <h3 class="h3" style="margin-top:8px;font-size:clamp(19px,2.2vw,22px)">The Master Pavilion Suite</h3>
           </div>
           <div style="text-align:right;white-space:nowrap;flex-shrink:0">
-            <div style="font-family:var(--font-display);font-size:clamp(20px,2.4vw,24px);color:var(--ink-900)">$2,400</div>
+            <div style="font-family:var(--font-display);font-size:clamp(19px,2.2vw,22px);color:var(--ink-900)">$2,400</div>
             <div class="caption" style="color:var(--ink-400)">per night</div>
           </div>
         </div>
@@ -346,17 +338,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <article class="card">
       <div class="tile" style="aspect-ratio:3/2;border-radius:0">
-        <img alt="The Falalu Suite — minimalist cliffside bedroom with glass wall opening onto a panoramic stone terrace overlooking Mediterranean limestone cliffs" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709391/photo-captures-serene-beauty-modern-minimalist-bedroom-seaside-villa-awe-inspiring-ocean-view-sleek-354199313_gsfohq.jpg"/>
+        <img alt="The Falalu Suite — minimalist cliffside bedroom with glass wall opening onto a panoramic stone terrace overlooking Mediterranean limestone cliffs" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_600,g_auto,q_auto,f_auto/v1789709391/photo-captures-serene-beauty-modern-minimalist-bedroom-seaside-villa-awe-inspiring-ocean-view-sleek-354199313_gsfohq.jpg" decoding="async" width="900" height="600"/>
         <span class="badge badge-dark" style="position:absolute;top:14px;left:14px">Signature</span>
       </div>
-      <div style="padding:24px">
+      <div style="padding:22px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px">
           <div style="min-width:0">
-            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.14em;font-size:10px;font-weight:600">Cliffside · Sunset Vista</div>
-            <h3 class="h3" style="margin-top:8px;font-size:clamp(20px,2.4vw,24px)">The Falalu Suite</h3>
+            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.13em;font-size:10px;font-weight:600">Cliffside · Sunset Vista</div>
+            <h3 class="h3" style="margin-top:8px;font-size:clamp(19px,2.2vw,22px)">The Falalu Suite</h3>
           </div>
           <div style="text-align:right;white-space:nowrap;flex-shrink:0">
-            <div style="font-family:var(--font-display);font-size:clamp(20px,2.4vw,24px);color:var(--ink-900)">$1,850</div>
+            <div style="font-family:var(--font-display);font-size:clamp(19px,2.2vw,22px);color:var(--ink-900)">$1,850</div>
             <div class="caption" style="color:var(--ink-400)">per night</div>
           </div>
         </div>
@@ -376,17 +368,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <article class="card">
       <div class="tile" style="aspect-ratio:3/2;border-radius:0">
-        <img alt="Garden Residence — tranquil garden suite bedroom looking into a private bamboo courtyard with warm sunlight and a stone soaking tub" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709404/images_jpeg7l.jpg"/>
+        <img alt="Garden Residence — tranquil garden suite bedroom looking into a private bamboo courtyard with warm sunlight and a stone soaking tub" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_600,g_auto,q_auto,f_auto/v1789709404/images_jpeg7l.jpg" decoding="async" width="900" height="600"/>
         <span class="badge badge-glass" style="position:absolute;top:14px;left:14px">Quiet Seclusion</span>
       </div>
-      <div style="padding:24px">
+      <div style="padding:22px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px">
           <div style="min-width:0">
-            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.14em;font-size:10px;font-weight:600">Botanical Wing · Private Enclosure</div>
-            <h3 class="h3" style="margin-top:8px;font-size:clamp(20px,2.4vw,24px)">Garden Residence</h3>
+            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.13em;font-size:10px;font-weight:600">Botanical Wing · Private Enclosure</div>
+            <h3 class="h3" style="margin-top:8px;font-size:clamp(19px,2.2vw,22px)">Garden Residence</h3>
           </div>
           <div style="text-align:right;white-space:nowrap;flex-shrink:0">
-            <div style="font-family:var(--font-display);font-size:clamp(20px,2.4vw,24px);color:var(--ink-900)">$1,420</div>
+            <div style="font-family:var(--font-display);font-size:clamp(19px,2.2vw,22px);color:var(--ink-900)">$1,420</div>
             <div class="caption" style="color:var(--ink-400)">per night</div>
           </div>
         </div>
@@ -406,17 +398,17 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
     <article class="card">
       <div class="tile" style="aspect-ratio:3/2;border-radius:0">
-        <img alt="Cliff Penthouse Villa — double-height penthouse with travertine columns, bespoke teak dining salon, and outdoor sunset deck with fire bowl" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709415/images_1_yj234b.jpg"/>
+        <img alt="Cliff Penthouse Villa — double-height penthouse with travertine columns, bespoke teak dining salon, and outdoor sunset deck with fire bowl" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_900,h_600,g_auto,q_auto,f_auto/v1789709415/images_1_yj234b.jpg" decoding="async" width="900" height="600"/>
         <span class="badge badge-accent" style="position:absolute;top:14px;left:14px">Crown Villa</span>
       </div>
-      <div style="padding:24px">
+      <div style="padding:22px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px">
           <div style="min-width:0">
-            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.14em;font-size:10px;font-weight:600">Highest Tier · Unrestricted Seclusion</div>
-            <h3 class="h3" style="margin-top:8px;font-size:clamp(20px,2.4vw,24px)">Cliff Penthouse Villa</h3>
+            <div class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.13em;font-size:10px;font-weight:600">Highest Tier · Unrestricted Seclusion</div>
+            <h3 class="h3" style="margin-top:8px;font-size:clamp(19px,2.2vw,22px)">Cliff Penthouse Villa</h3>
           </div>
           <div style="text-align:right;white-space:nowrap;flex-shrink:0">
-            <div style="font-family:var(--font-display);font-size:clamp(20px,2.4vw,24px);color:var(--ink-900)">$4,200</div>
+            <div style="font-family:var(--font-display);font-size:clamp(19px,2.2vw,22px);color:var(--ink-900)">$4,200</div>
             <div class="caption" style="color:var(--ink-400)">per night</div>
           </div>
         </div>
@@ -437,33 +429,32 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ SUITE SPOTLIGHT ============ -->
 <section id="suite-spotlight" class="section" style="background:var(--paper-2)">
   <div class="container">
 
-    <div class="reveal" style="max-width:680px;margin-bottom:48px">
+    <div class="reveal" style="max-width:680px;margin-bottom:44px">
       <span class="eyebrow">Architecture Focus</span>
-      <h2 class="h2" style="margin:16px 0 16px 0">The Falalu Suite in depth.</h2>
+      <h2 class="h2" style="margin:16px 0 14px 0">The Falalu Suite in depth.</h2>
       <p class="lede">Arranged on a continuous east-west axis, capturing first dawn across the water and golden sunset across the bluffs. Minimal visual obstructions connect interior stone surfaces directly with the marine horizon.</p>
     </div>
 
-    <div class="grid-3 stagger" style="margin-bottom:56px">
+    <div class="grid-3 stagger" style="margin-bottom:52px">
       <div class="tile" style="aspect-ratio:4/5">
-        <img alt="Master sleeping quarters — custom walnut headboard, raw linen sheets, brass reading sconce, natural light grazing warm plaster walls" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709423/solid-walnut-wood-headboard-in-various-sizes_ergiqu.png"/>
+        <img alt="Master sleeping quarters — custom walnut headboard, raw linen sheets, brass reading sconce, natural light grazing warm plaster walls" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_700,h_880,g_auto,q_auto,f_auto/v1789709423/solid-walnut-wood-headboard-in-various-sizes_ergiqu.png" decoding="async" width="700" height="880"/>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 18px;background:linear-gradient(180deg,transparent,rgba(10,10,10,.85))">
-          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">I. Master Sleeping Quarters</span>
+          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">I. Master Sleeping Quarters</span>
         </div>
       </div>
       <div class="tile" style="aspect-ratio:4/5">
-        <img alt="Sunken cliff terrace at sunset — low-slung loungers, infinity plunge pool overflowing toward the sea, warm sandstone pavers" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709430/images_2_lhpw3n.jpg"/>
+        <img alt="Sunken cliff terrace at sunset — low-slung loungers, infinity plunge pool overflowing toward the sea, warm sandstone pavers" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_700,h_880,g_auto,q_auto,f_auto/v1789709430/images_2_lhpw3n.jpg" decoding="async" width="700" height="880"/>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 18px;background:linear-gradient(180deg,transparent,rgba(10,10,10,.85))">
-          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">II. Sunken Cliff Terrace</span>
+          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">II. Sunken Cliff Terrace</span>
         </div>
       </div>
       <div class="tile" style="aspect-ratio:4/5">
-        <img alt="Monolithic bath sanctuary — travertine bathroom with freestanding stone tub positioned in front of floor-to-ceiling glass" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709441/images_3_bzixfh.jpg"/>
+        <img alt="Monolithic bath sanctuary — travertine bathroom with freestanding stone tub positioned in front of floor-to-ceiling glass" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_700,h_880,g_auto,q_auto,f_auto/v1789709441/images_3_bzixfh.jpg" decoding="async" width="700" height="880"/>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 18px;background:linear-gradient(180deg,transparent,rgba(10,10,10,.85))">
-          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">III. Monolithic Bath Sanctuary</span>
+          <span class="caption" style="color:#fff;text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">III. Monolithic Bath Sanctuary</span>
         </div>
       </div>
     </div>
@@ -473,18 +464,18 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       <div class="floorplan reveal">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:20px">
           <div>
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Technical Blueprint</span>
-            <h3 class="h3" style="margin-top:8px;font-size:20px">Floor Plan · Scale 1:50</h3>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Technical Blueprint</span>
+            <h3 class="h3" style="margin-top:8px;font-size:19px">Floor Plan · Scale 1:50</h3>
           </div>
-          <span class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.14em">Level 04 · Suite 402</span>
+          <span class="caption" style="color:var(--ink-400);text-transform:uppercase;letter-spacing:0.13em">Level 04 · Suite 402</span>
         </div>
 
         <div class="floorplan__canvas">
           <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
             <rect fill="#FBF9F5" height="340" stroke="#ccc5bd" stroke-width="2.5" width="560" x="20" y="20"></rect>
-            <rect fill="#F5F3EF" height="336" stroke="#ccc5bd" stroke-dasharray="4 4" width="218" x="360" y="22"></rect>
+            <rect fill="#F2EFE8" height="336" stroke="#ccc5bd" stroke-dasharray="4 4" width="218" x="360" y="22"></rect>
             <text fill="#7B766F" font-family="Plus Jakarta Sans, sans-serif" font-size="10" letter-spacing="2" x="440" y="190" text-anchor="middle">PRIVATE TERRACE</text>
-            <rect fill="#EAE8E4" height="110" stroke="#7B766F" stroke-width="1.5" width="130" x="420" y="40"></rect>
+            <rect fill="#EAE6DD" height="110" stroke="#7B766F" stroke-width="1.5" width="130" x="420" y="40"></rect>
             <text fill="#4A4640" font-family="Plus Jakarta Sans, sans-serif" font-size="10" x="485" y="100" text-anchor="middle">PLUNGE POOL</text>
             <rect fill="#FBF9F5" height="210" stroke="#ccc5bd" stroke-width="1" width="338" x="22" y="22"></rect>
             <rect fill="#EFECE6" height="150" stroke="#7B766F" stroke-width="1.5" width="130" x="130" y="40"></rect>
@@ -493,8 +484,8 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
             <text fill="#1B1C1A" font-family="Plus Jakarta Sans, sans-serif" font-size="10" x="195" y="130" text-anchor="middle">KING MATTRESS</text>
             <rect fill="#E4E2DE" height="30" stroke="#7B766F" width="25" x="95" y="45"></rect>
             <rect fill="#E4E2DE" height="30" stroke="#7B766F" width="25" x="270" y="45"></rect>
-            <rect fill="#F5F3EF" height="126" stroke="#ccc5bd" stroke-width="1" width="338" x="22" y="232"></rect>
-            <ellipse cx="90" cy="295" fill="#EAE8E4" rx="45" ry="25" stroke="#7B766F" stroke-width="1.5"></ellipse>
+            <rect fill="#F2EFE8" height="126" stroke="#ccc5bd" stroke-width="1" width="338" x="22" y="232"></rect>
+            <ellipse cx="90" cy="295" fill="#EAE6DD" rx="45" ry="25" stroke="#7B766F" stroke-width="1.5"></ellipse>
             <text fill="#4A4640" font-family="Plus Jakarta Sans, sans-serif" font-size="9" x="90" y="298" text-anchor="middle">STONE TUB</text>
             <rect fill="#E4E2DE" height="35" stroke="#7B766F" width="130" x="190" y="315"></rect>
             <ellipse cx="225" cy="332" fill="#FBF9F5" rx="14" ry="10" stroke="#7B766F"></ellipse>
@@ -525,8 +516,8 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
       <div style="display:flex;flex-direction:column;gap:20px">
 
-        <div class="card-flat reveal" style="padding:24px">
-          <h4 class="h4" style="margin-bottom:18px">Sanctuary Inclusions</h4>
+        <div class="card-flat reveal" style="padding:22px">
+          <h4 class="h4" style="margin-bottom:16px">Sanctuary Inclusions</h4>
           <ul class="inclusions">
             <li><span class="material-symbols-outlined">check_circle</span><span>24/7 dedicated major-domo host service</span></li>
             <li><span class="material-symbols-outlined">check_circle</span><span>Private bar curated to your palate profile before arrival</span></li>
@@ -538,7 +529,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
         <div class="booking-box reveal">
           <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px">
-            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Reserve The Falalu Suite</span>
+            <span class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Reserve The Falalu Suite</span>
             <span class="caption" style="color:var(--ink-400)">Min. 2 nights</span>
           </div>
 
@@ -568,7 +559,7 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
               <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--ink-500)"><span>$1,850 × 4 nights</span><span>$7,400</span></div>
               <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--ink-500)"><span>Sanctuary &amp; ecological fee</span><span>Included</span></div>
               <div class="booking-total">
-                <span class="caption" style="color:var(--ink-700);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Total Stay Estimate</span>
+                <span class="caption" style="color:var(--ink-700);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Total Stay Estimate</span>
                 <span class="amount">$7,400 <span style="font-size:12px;color:var(--ink-400);font-family:var(--font-sans)">USD</span></span>
               </div>
             </div>
@@ -584,41 +575,39 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   </div>
 </section>
 
-<!-- ============ ADVISORY ============ -->
 <section class="advisory">
   <div class="container advisory__inner reveal">
     <div style="max-width:640px">
       <span class="eyebrow no-rule" style="color:var(--gold)">Curated Sanctuary Experience</span>
       <h2 class="h2" style="color:#fff;margin:16px 0 14px 0">Require a compound or multi-residence buyout?</h2>
-      <p class="body" style="color:rgba(255,255,255,.65)">For private gatherings, whole-sanctuary reservations, or bespoke helicopter arrival itineraries, our Resident Curator is at your service.</p>
+      <p class="body" style="color:rgba(255,255,255,.68)">For private gatherings, whole-sanctuary reservations, or bespoke helicopter arrival itineraries, our Resident Curator is at your service.</p>
     </div>
     <div class="flex-wrap-gap" style="flex-shrink:0">
       <a href="tel:+39089871000" class="btn btn-inverse btn-lg">Call Head Curator</a>
-      <a href="contact.html" class="btn btn-lg" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)">Submit Inquiry</a>
+      <a href="contact.html" class="btn btn-lg" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.22)">Submit Inquiry</a>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer style="background:var(--paper-2);border-top:1px solid var(--line)">
-  <div class="container" style="padding-block:64px 28px">
-    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+  <div class="container" style="padding-block:60px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:52px;border-bottom:1px solid var(--line)">
 
       <div>
-        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase">The Falalu</span>
         <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
-        <div style="margin-top:28px">
-          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+        <div style="margin-top:26px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.13em;font-weight:600;font-size:10px">Direct Inquiries</div>
           <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
           <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
         </div>
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
-        <ul style="display:flex;flex-direction:column;gap:12px">
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:11px">
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
           <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
@@ -628,13 +617,13 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
       </div>
 
       <div>
-        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.13em;font-size:11px;font-weight:600;margin-bottom:18px">The Private Ledger</div>
         <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
           <input required type="email" placeholder="your@email.com" aria-label="Email address"
-                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:50px;font-family:var(--font-sans);font-size:14px;color:var(--ink-900);outline:none;min-width:0;transition:border-color var(--dur) var(--ease)"
                  onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
-          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+          <button type="submit" class="btn btn-primary" style="height:50px;padding:0 24px;flex-shrink:0">Join Ledger</button>
         </form>
         <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
       </div>
@@ -695,4 +684,4 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 </script>
 
 </body>
-  </html>
+</html>
