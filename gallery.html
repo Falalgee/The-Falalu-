@@ -7,14 +7,15 @@
 <title>Gallery · The Falalu</title>
 <meta name="description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline on the Amalfi Coast."/>
 <meta property="og:title" content="Gallery · The Falalu"/>
-<meta property="og:description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline."/>
+<meta property="og:description" content="A visual journal of The Falalu."/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_1200,h_630,q_auto,f_auto/v1789715796/images_22_xk5x1s.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 
@@ -53,19 +54,15 @@ ul{list-style:none;padding:0;margin:0}
 
 body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
 
-.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
 .h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
-.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
 .h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
 .h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
 .lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
-.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
 .body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
 .caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
 
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
 .eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
-.eyebrow.no-rule::before{display:none}
 
 .container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
 .section{padding-block:var(--section-y)}
@@ -84,17 +81,9 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:active{transform:translateY(0.5px)}
 .btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
-.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
-.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
-.btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
-.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
 .btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
-@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-sm{height:38px;padding:0 16px}}
 .btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
-
-.tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
-@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
 
 .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
 
@@ -116,106 +105,125 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .drawer.is-open{transform:translateX(0)}
 .drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
 
-/* ---------- GALLERY SPECIFIC ---------- */
 .filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
-.filter-btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  height:40px;padding:0 20px;border-radius:var(--r-md);
-  font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;
-  transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap;
-}
+.filter-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;border-radius:var(--r-md);font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap}
 .filter-btn:hover{background:var(--paper-3);color:var(--ink-900)}
 .filter-btn.is-active{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
 .filter-btn .count{font-weight:500;opacity:.6;margin-left:6px;font-size:10px}
 
-.gallery-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:20px;
-}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:20px}}
 @media(min-width:1024px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
 
+/* ============================================
+   SKELETON TILE
+   ============================================ */
 .gallery-tile{
-  position:relative;overflow:hidden;
-  background:var(--paper-3);
+  position:relative;
+  overflow:hidden;
   border-radius:var(--r-lg);
   aspect-ratio:4/5;
   cursor:zoom-in;
-  transition:opacity 400ms var(--ease),transform 400ms var(--ease);
+  /* The visible "skeleton" base colour */
+  background:#e6e0d3;
 }
+
+/* Moving shimmer band — clearly visible, sweeps across */
+.gallery-tile::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    100deg,
+    rgba(230,224,211,0) 20%,
+    rgba(255,255,255,.55) 50%,
+    rgba(230,224,211,0) 80%
+  );
+  background-size:200% 100%;
+  animation:skeleton-shimmer 1.6s linear infinite;
+  z-index:1;
+  pointer-events:none;
+  transition:opacity 400ms var(--ease);
+}
+
+/* Small pulsing icon + "loading" label so it's unmistakable */
+.gallery-tile::after{
+  content:'image';
+  font-family:'Material Symbols Outlined';
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-size:36px;
+  color:rgba(108,91,77,.35);
+  z-index:2;
+  pointer-events:none;
+  animation:skeleton-pulse 2s ease-in-out infinite;
+  transition:opacity 400ms var(--ease);
+}
+
+@keyframes skeleton-shimmer{
+  from{background-position:200% 0}
+  to{background-position:-200% 0}
+}
+@keyframes skeleton-pulse{
+  0%,100%{opacity:.35}
+  50%{opacity:.65}
+}
+
+/* The real image sits on top, hidden until it loads */
 .gallery-tile img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform 900ms var(--ease);
+  position:relative;
+  z-index:3;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 500ms var(--ease),transform 900ms var(--ease);
 }
+
+/* Loaded state — image fades in, skeleton disappears */
+.gallery-tile.is-loaded::before,
+.gallery-tile.is-loaded::after{
+  opacity:0;
+}
+.gallery-tile.is-loaded img{
+  opacity:1;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .gallery-tile::before,
+  .gallery-tile::after{animation:none}
+}
+
 @media(hover:hover){
   .gallery-tile:hover img{transform:scale(1.06)}
   .gallery-tile:hover .gallery-tile__meta{opacity:1;transform:none}
 }
+
 .gallery-tile__meta{
   position:absolute;left:0;right:0;bottom:0;
   padding:20px;
   background:linear-gradient(180deg,transparent,rgba(10,10,10,.85));
   color:#fff;
+  z-index:4;
   opacity:0;transform:translateY(8px);
   transition:opacity 400ms var(--ease),transform 400ms var(--ease);
   pointer-events:none;
 }
-.gallery-tile__meta .cat{
-  font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);
-}
-.gallery-tile__meta .title{
-  font-family:var(--font-display);font-weight:400;font-size:16px;line-height:1.3;margin-top:6px;
-}
-@media(hover:none){
-  .gallery-tile__meta{opacity:1;transform:none}
-}
+.gallery-tile__meta .cat{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
+.gallery-tile__meta .title{font-family:var(--font-display);font-weight:400;font-size:16px;line-height:1.3;margin-top:6px}
+@media(hover:none){.gallery-tile__meta{opacity:1;transform:none}}
 
 .gallery-tile.is-hidden{display:none}
 
-/* Lightbox */
-.lightbox{
-  position:fixed;inset:0;z-index:200;
-  background:rgba(10,10,10,.94);
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  display:none;
-  align-items:center;justify-content:center;
-  padding:24px;
-  opacity:0;
-  transition:opacity 300ms var(--ease);
-}
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(10,10,10,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity 300ms var(--ease)}
 .lightbox.is-open{display:flex;opacity:1}
-.lightbox__img{
-  max-width:min(1200px,92vw);
-  max-height:88vh;
-  width:auto;height:auto;
-  object-fit:contain;
-  border-radius:var(--r-lg);
-  box-shadow:0 40px 80px rgba(0,0,0,.5);
-  transform:scale(.96);
-  transition:transform 300ms var(--ease);
-}
+.lightbox__img{max-width:min(1200px,92vw);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:var(--r-lg);box-shadow:0 40px 80px rgba(0,0,0,.5);transform:scale(.96);transition:transform 300ms var(--ease)}
 .lightbox.is-open .lightbox__img{transform:scale(1)}
-.lightbox__close{
-  position:absolute;top:20px;right:20px;
-  width:44px;height:44px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:var(--r-md);
-  background:rgba(255,255,255,.08);
-  color:#fff;
-  border:1px solid rgba(255,255,255,.15);
-  cursor:pointer;
-  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
-}
+.lightbox__close{position:absolute;top:20px;right:20px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:var(--r-md);background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease)}
 .lightbox__close:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3)}
 .lightbox__close .material-symbols-outlined{font-size:22px}
-.lightbox__caption{
-  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
-  color:rgba(255,255,255,.7);
-  font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;
-  text-align:center;padding:0 16px;
-}
+.lightbox__caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-align:center;padding:0 16px}
 @media(max-width:639px){
   .lightbox__close{top:12px;right:12px;width:40px;height:40px}
   .lightbox__caption{bottom:16px;font-size:11px}
@@ -231,26 +239,12 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 .no-scroll{overflow:hidden}
 *{-webkit-tap-highlight-color:transparent}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
 .reveal.is-in{opacity:1;transform:none}
-.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
-.stagger.is-in > *{opacity:1;transform:none}
-.stagger.is-in > *:nth-child(1){transition-delay:0ms}
-.stagger.is-in > *:nth-child(2){transition-delay:60ms}
-.stagger.is-in > *:nth-child(3){transition-delay:120ms}
-.stagger.is-in > *:nth-child(4){transition-delay:180ms}
-.stagger.is-in > *:nth-child(5){transition-delay:240ms}
-.stagger.is-in > *:nth-child(6){transition-delay:300ms}
-.stagger.is-in > *:nth-child(7){transition-delay:360ms}
-.stagger.is-in > *:nth-child(8){transition-delay:420ms}
-.stagger.is-in > *:nth-child(9){transition-delay:480ms}
-.stagger.is-in > *:nth-child(10){transition-delay:540ms}
-.stagger.is-in > *:nth-child(11){transition-delay:600ms}
-.stagger.is-in > *:nth-child(12){transition-delay:660ms}
 
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
-  .reveal,.stagger > *{opacity:1;transform:none}
+  .reveal{opacity:1;transform:none}
 }
 </style>
 </head>
@@ -331,7 +325,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     </div>
   </div>
 
-  <!-- Filter bar -->
   <div class="filter-bar reveal" role="tablist" aria-label="Gallery filters">
     <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All <span class="count">(20)</span></button>
     <button class="filter-btn" data-filter="architecture" aria-pressed="false">Architecture <span class="count">(5)</span></button>
@@ -343,186 +336,106 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
 
 <!-- ============ GALLERY GRID ============ -->
 <section class="container" style="padding-bottom:var(--section-y)">
-  <div class="gallery-grid stagger" id="gallery-grid">
+  <div class="gallery-grid" id="gallery-grid">
 
-    <!-- 01 · Architecture -->
-    <figure class="gallery-tile" data-category="architecture" data-caption="The Falalu Suite · Cliffside">
-      <img alt="Minimalist cliffside bedroom with glass wall opening onto a panoramic stone terrace overlooking Mediterranean limestone cliffs" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709391/photo-captures-serene-beauty-modern-minimalist-bedroom-seaside-villa-awe-inspiring-ocean-view-sleek-354199313_gsfohq.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Architecture</div>
-        <div class="title">The Falalu Suite</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · The Falalu">
+      <img alt="The Falalu — architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715796/images_22_xk5x1s.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">The Falalu</div></figcaption>
     </figure>
 
-    <!-- 02 · Dining -->
-    <figure class="gallery-tile" data-category="dining" data-caption="The Obsidian Room · Plating">
-      <img alt="Chef's hands plating a fine dining dish with tweezers, high-angle close-up" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711867/professional-chef-hands-plating-fine-dining-dish-tweezers-high-angle-close-up-s-using-to-place-garnish-emphasizing-422141252_m4gnxl.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Dining</div>
-        <div class="title">Plating · L'Atelier</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="dining" data-caption="Dining · L'Atelier Falalu">
+      <img alt="Dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715888/images_28_jjqfnx.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">L'Atelier Falalu</div></figcaption>
     </figure>
 
-    <!-- 03 · Wellness -->
-    <figure class="gallery-tile" data-category="wellness" data-caption="Thermal Sanctuary · Caldarium">
-      <img alt="Subterranean thermal stone pool chamber with skylight and steam rising over dark basalt water" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713094/images_9_zd9drj.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Wellness</div>
-        <div class="title">Caldarium Spring</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Thermal Sanctuary">
+      <img alt="Thermal Sanctuary at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715957/images_32_cwb8k7.jpg" fetchpriority="high" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Thermal Sanctuary</div></figcaption>
     </figure>
 
-    <!-- 04 · Experiences -->
-    <figure class="gallery-tile" data-category="experiences" data-caption="Riva Yacht · Twilight Charter">
-      <img alt="Vintage wooden Riva yacht on calm Mediterranean water at golden hour" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714292/images_15_rdq6bi.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Experiences</div>
-        <div class="title">The Riva Expedition</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · On the Water">
+      <img alt="Experiences at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716030/images_1_yhetp8.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">On the Water</div></figcaption>
     </figure>
 
-    <!-- 05 · Architecture -->
-    <figure class="gallery-tile" data-category="architecture" data-caption="The Master Pavilion · Ocean Wing">
-      <img alt="Master Pavilion Suite — floating walnut bed frame and outdoor deck with infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709379/b117775f-f32b-4b64-b072-6a62b01f88f6-1024x683_dj7t2x.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Architecture</div>
-        <div class="title">The Master Pavilion</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Pavilion Wing">
+      <img alt="Architecture — Pavilion Wing" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715803/images_23_sojbw1.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Pavilion Wing</div></figcaption>
     </figure>
 
-    <!-- 06 · Dining -->
-    <figure class="gallery-tile" data-category="dining" data-caption="The Cellar Vault">
-      <img alt="Subterranean limestone wine cellar with vintage racks and low amber light" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711889/images_6_a1eypj.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Dining</div>
-        <div class="title">Cellar &amp; Cigar Lounge</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="dining" data-caption="Dining · Plating Detail">
+      <img alt="Plating detail at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715904/images_29_xhgyou.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Plating Detail</div></figcaption>
     </figure>
 
-    <!-- 07 · Wellness -->
-    <figure class="gallery-tile" data-category="wellness" data-caption="Hot Basalt Bodywork">
-      <img alt="Heated volcanic basalt stones placed along a guest's back during a massage" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713120/images_11_vjlqka.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Wellness</div>
-        <div class="title">Volcanic Stone Massage</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Stone Bodywork">
+      <img alt="Stone bodywork at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715963/images_33_div9ah.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Stone Bodywork</div></figcaption>
     </figure>
 
-    <!-- 08 · Experiences -->
-    <figure class="gallery-tile" data-category="experiences" data-caption="Blue Grotto · Sorrentine Coast">
-      <img alt="Turquoise water inside a limestone sea cave along the Amalfi Coast" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714300/images_16_m4zzmg.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Experiences</div>
-        <div class="title">Blue Grotto &amp; Sea Caves</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Sea Caves">
+      <img alt="Sea caves experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716037/images_2_uhtrbn.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Sea Caves</div></figcaption>
     </figure>
 
-    <!-- 09 · Architecture -->
-    <figure class="gallery-tile" data-category="architecture" data-caption="Garden Residence · Botanical Wing">
-      <img alt="Garden Residence — tranquil garden suite bedroom opening into a private bamboo courtyard with a stone soaking tub" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709404/images_jpeg7l.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Architecture</div>
-        <div class="title">Garden Residence</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Garden Residence">
+      <img alt="Garden Residence architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715810/images_24_xhahxv.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Garden Residence</div></figcaption>
     </figure>
 
-    <!-- 10 · Dining -->
-    <figure class="gallery-tile" data-category="dining" data-caption="L'Atelier Falalu">
-      <img alt="L'Atelier Falalu — intimate fine dining room with warm lighting and refined table settings" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711874/images_4_tozeur.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Dining</div>
-        <div class="title">L'Atelier Falalu</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="dining" data-caption="Dining · The Cellar Vault">
+      <img alt="The Cellar Vault dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715922/images_30_ngwfoa.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">The Cellar Vault</div></figcaption>
     </figure>
 
-    <!-- 11 · Wellness -->
-    <figure class="gallery-tile" data-category="wellness" data-caption="Acoustic Dome · Sound Bath">
-      <img alt="Subterranean acoustic meditation chamber with smooth curved stone dome, floor cushions, and singing quartz bowls" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713101/images_10_an5a4l.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Wellness</div>
-        <div class="title">Acoustic Dome</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Acoustic Dome">
+      <img alt="Acoustic Dome at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715971/images_34_hmhqqc.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Acoustic Dome</div></figcaption>
     </figure>
 
-    <!-- 12 · Experiences -->
-    <figure class="gallery-tile" data-category="experiences" data-caption="Helicopter Odyssey · Aerial">
-      <img alt="Aerial view of the Amalfi coastline from a private helicopter" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714307/images_17_j963ju.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Experiences</div>
-        <div class="title">Helicopter Odyssey</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Coastal Aerial">
+      <img alt="Coastal aerial experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716041/images_3_qkjv4h.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Coastal Aerial</div></figcaption>
     </figure>
 
-    <!-- 13 · Architecture -->
-    <figure class="gallery-tile" data-category="architecture" data-caption="Cliff Penthouse · Crown Villa">
-      <img alt="Cliff Penthouse Villa — double-height penthouse with travertine columns opening to a sunset deck and infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709415/images_1_yj234b.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Architecture</div>
-        <div class="title">Cliff Penthouse Villa</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Cliff Penthouse">
+      <img alt="Cliff Penthouse architecture" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715819/images_25_d6zm48.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Cliff Penthouse</div></figcaption>
     </figure>
 
-    <!-- 14 · Dining -->
-    <figure class="gallery-tile" data-category="dining" data-caption="Olive Pergola · Al-Fresco">
-      <img alt="Olive Pergola — sunlit terrace breakfast under ancient olive trees with views over the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711882/images_5_xftoh7.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Dining</div>
-        <div class="title">The Olive Pergola</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="dining" data-caption="Dining · Al-Fresco">
+      <img alt="Al-fresco dining at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715932/images_31_r46syv.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Al-Fresco</div></figcaption>
     </figure>
 
-    <!-- 15 · Wellness -->
-    <figure class="gallery-tile" data-category="wellness" data-caption="The Falalu Grand Alignment">
-      <img alt="Close-up of an essential oil drop falling into a herbal bowl on dark wet volcanic slate" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713141/images_13_kl2lha.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Wellness</div>
-        <div class="title">Grand Alignment Ritual</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Ritual Detail">
+      <img alt="Wellness ritual detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715978/images_35_jcdnpt.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Ritual Detail</div></figcaption>
     </figure>
 
-    <!-- 16 · Experiences -->
-    <figure class="gallery-tile" data-category="experiences" data-caption="Lemon Grove Walk · Sfusato">
-      <img alt="Terraced Amalfi lemon grove with mature citrus trees and stone retaining walls overlooking the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714331/images_18_cryr5c.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Experiences</div>
-        <div class="title">Lemon Grove Walk</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Lemon Grove">
+      <img alt="Lemon grove experience" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716047/images_4_allowq.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Lemon Grove</div></figcaption>
     </figure>
 
-    <!-- 17 · Architecture -->
-    <figure class="gallery-tile" data-category="architecture" data-caption="Walnut Headboard · Bedroom Detail">
-      <img alt="Solid walnut wood headboard detail in a warm, naturally lit bedroom" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709423/solid-walnut-wood-headboard-in-various-sizes_ergiqu.png" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Architecture</div>
-        <div class="title">Walnut &amp; Linen Detail</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="architecture" data-caption="Architecture · Interior Detail">
+      <img alt="Interior architectural detail" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715827/images_26_o79roi.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Architecture</div><div class="title">Interior Detail</div></figcaption>
     </figure>
 
-    <!-- 18 · Dining -->
-    <figure class="gallery-tile" data-category="dining" data-caption="Private Pavilion Dining">
-      <img alt="Secluded cliffside terrace at night lit by candles, set for two over the dark sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711897/images_7_epn7uh.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Dining</div>
-        <div class="title">Private Pavilion Dining</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="dining" data-caption="Dining · Private Pavilion">
+      <img alt="Private Pavilion dining" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715947/images_27_rcp5u8.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Dining</div><div class="title">Private Pavilion</div></figcaption>
     </figure>
 
-    <!-- 19 · Wellness -->
-    <figure class="gallery-tile" data-category="wellness" data-caption="Botanical Wrap · CBD &amp; Algae">
-      <img alt="Clay and botanical mud wrap application in a steam-filled private subterranean treatment room" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713135/images_12_loxvzi.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Wellness</div>
-        <div class="title">Botanical Wrap</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="wellness" data-caption="Wellness · Botanical Ritual">
+      <img alt="Botanical wellness treatment" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789715991/images_lyceih.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Wellness</div><div class="title">Botanical Ritual</div></figcaption>
     </figure>
 
-    <!-- 20 · Experiences -->
-    <figure class="gallery-tile" data-category="experiences" data-caption="Cliffside Celestial Dinner">
-      <img alt="Candlelit table for two on a cliffside terrace at night, overlooking the dark Mediterranean Sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714337/images_19_pa5kio.jpg" loading="lazy"/>
-      <figcaption class="gallery-tile__meta">
-        <div class="cat">Experiences</div>
-        <div class="title">Celestial Dinner</div>
-      </figcaption>
+    <figure class="gallery-tile" data-category="experiences" data-caption="Experiences · Twilight">
+      <img alt="Sunset experience at The Falalu" src="https://res.cloudinary.com/dvpt87rho/image/upload/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/v1789716051/images_5_q1xfdm.jpg" loading="lazy" decoding="async" width="800" height="1000" onload="this.parentElement.classList.add('is-loaded')"/>
+      <figcaption class="gallery-tile__meta"><div class="cat">Experiences</div><div class="title">Twilight</div></figcaption>
     </figure>
 
   </div>
@@ -627,14 +540,31 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     });
   });
 
+  // ---------- SKELETON FALLBACK ----------
+  // Inline onload handles most cases. This is a safety net for cached images
+  // (whose onload may have already fired before this script runs).
+  tiles.forEach(tile => {
+    const img = tile.querySelector('img');
+    if (!img) return;
+    if (img.complete && img.naturalWidth > 0) {
+      tile.classList.add('is-loaded');
+    }
+    // If it errors, drop the skeleton anyway
+    img.addEventListener('error', () => tile.classList.add('is-loaded'), { once: true });
+  });
+
   // ---------- LIGHTBOX ----------
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
   const lightboxClose = document.getElementById('lightbox-close');
 
+  function upgradeUrl(src){
+    return src.replace('/c_fill,w_800,h_1000,g_auto,q_auto,f_auto/', '/c_limit,w_1800,q_auto,f_auto/');
+  }
+
   function openLightbox(src, alt, caption){
-    lightboxImg.src = src;
+    lightboxImg.src = upgradeUrl(src);
     lightboxImg.alt = alt || '';
     lightboxCaption.textContent = caption || '';
     lightbox.classList.add('is-open');
@@ -643,7 +573,6 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
   function closeLightbox(){
     lightbox.classList.remove('is-open');
     body.classList.remove('no-scroll');
-    // Delay clearing src so fade-out isn't jarring
     setTimeout(() => { lightboxImg.src = ''; }, 320);
   }
 
@@ -660,13 +589,10 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
     if (e.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      closeLightbox();
-      closeDrawer();
-    }
+    if (e.key === 'Escape') { closeLightbox(); closeDrawer(); }
   });
 
-  // ---------- SCROLL REVEAL ----------
+  // ---------- REVEAL (filter bar only) ----------
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
@@ -677,12 +603,12 @@ body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink
         }
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   } else {
-    document.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('is-in'));
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
   }
 })();
 </script>
 
 </body>
-</html>
+  </html>
