@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta name="theme-color" content="#fbf9f5"/>
+<title>Gallery · The Falalu</title>
+<meta name="description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline on the Amalfi Coast."/>
+<meta property="og:title" content="Gallery · The Falalu"/>
+<meta property="og:description" content="A visual journal of The Falalu — architecture, gastronomy, wellness, and coastline."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709369/infinity-pool-overlooking-the-ocean-in-a-luxurious-tropical-villa-photo_szuw4m.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a86a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0}
+body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit;padding:0}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;padding:0;margin:0}
+::-webkit-scrollbar{display:none}
+:focus-visible{outline:2px solid var(--ink-900);outline-offset:2px;border-radius:2px}
+
+:root{
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+  --ink-900:#0a0a0a;--ink-800:#141412;--ink-700:#1b1c1a;--ink-600:#33312e;--ink-500:#4a4640;--ink-400:#7b766f;--ink-300:#a8a29a;--ink-200:#c9c4bc;
+  --paper:#fbf9f5;--paper-2:#f6f4ef;--paper-3:#efede8;--paper-4:#e8e5df;
+  --line:#e8e5df;--line-2:#dcd8d1;
+  --accent:#6c5b4d;--accent-2:#8a7663;--gold:#c9a86a;
+  --r-sm:4px;--r-md:6px;--r-lg:10px;--r-xl:14px;
+  --sh-sm:0 1px 3px rgba(20,15,10,.05),0 1px 2px rgba(20,15,10,.03);
+  --sh-md:0 4px 14px rgba(20,15,10,.06),0 2px 4px rgba(20,15,10,.03);
+  --sh-lg:0 18px 44px rgba(20,15,10,.08),0 6px 14px rgba(20,15,10,.04);
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --dur:200ms;--dur-2:300ms;
+  --section-y:64px;--container-x:20px;--header-h:64px;
+}
+@media(min-width:640px){:root{--section-y:88px;--container-x:32px;--header-h:68px}}
+@media(min-width:1024px){:root{--section-y:112px;--container-x:48px;--header-h:72px}}
+@media(min-width:1440px){:root{--section-y:128px;--container-x:56px}}
+
+body{font-family:var(--font-sans);font-size:15px;line-height:1.6;color:var(--ink-700);background:var(--paper);overflow-x:hidden}
+
+.display{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-0.03em;color:var(--ink-900)}
+.h1{font-family:var(--font-display);font-weight:400;font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-0.025em;color:var(--ink-900)}
+.h2{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-0.02em;color:var(--ink-900)}
+.h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,3vw,26px);line-height:1.25;letter-spacing:-0.01em;color:var(--ink-900)}
+.h4{font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1.35;color:var(--ink-900)}
+.lede{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink-500);font-weight:400}
+.body{font-size:15px;line-height:1.65;color:var(--ink-500)}
+.body-sm{font-size:13px;line-height:1.6;color:var(--ink-500)}
+.caption{font-size:12px;font-weight:500;letter-spacing:0.02em;color:var(--ink-400)}
+
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:'';width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow.no-rule::before{display:none}
+
+.container{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--container-x)}
+.section{padding-block:var(--section-y)}
+
+.nav-link{position:relative;padding:6px 0;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-400);transition:color var(--dur) var(--ease);white-space:nowrap}
+.nav-link::after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:1.5px;background:var(--ink-900);transition:width 260ms var(--ease)}
+.nav-link:hover{color:var(--ink-900)}
+.nav-link:hover::after{width:60%}
+.nav-link.is-active{color:var(--ink-900);font-weight:600}
+.nav-link.is-active::after{width:100%}
+
+.mobile-link{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(22px,5.5vw,28px);line-height:1.3;letter-spacing:-0.01em;color:var(--ink-400);padding:8px 0;transition:color var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.mobile-link:hover,.mobile-link:active{color:var(--ink-900);transform:translateX(4px)}
+.mobile-link.is-active{color:var(--ink-900);font-weight:500}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r-md);border:1px solid transparent;font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease),transform var(--dur) var(--ease);-webkit-tap-highlight-color:transparent}
+.btn:active{transform:translateY(0.5px)}
+.btn-primary{background:var(--ink-900);color:#fff}.btn-primary:hover{background:var(--ink-600)}
+.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--line-2)}.btn-secondary:hover{background:var(--paper-2);border-color:var(--ink-400)}
+.btn-ghost{background:transparent;color:var(--ink-900)}.btn-ghost:hover{background:rgba(10,10,10,.05)}
+.btn-inverse{background:#fff;color:var(--ink-900)}.btn-inverse:hover{background:var(--paper-2)}
+.btn-lg{height:52px;padding:0 26px;font-size:12px;letter-spacing:0.13em}
+.btn-sm{height:36px;padding:0 14px;font-size:10px;letter-spacing:0.14em}
+@media(max-width:639px){.btn{height:44px;padding:0 18px}.btn-lg{height:48px;padding:0 22px;font-size:11px}.btn-sm{height:38px;padding:0 16px}.btn-block-sm{width:100%}}
+.btn .material-symbols-outlined{font-size:16px;font-variation-settings:'wght' 500}
+
+.tile{position:relative;overflow:hidden;background:var(--paper-3);border-radius:var(--r-lg)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease)}
+@media(hover:hover){.tile:hover img{transform:scale(1.04)}}
+
+.chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:var(--r-sm);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-500);white-space:nowrap}
+
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:100;background:#fbf9f5;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top);will-change:transform;transform:translateZ(0)}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
+  .site-header{background:rgba(251,249,245,.94);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%)}
+}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.5vw,32px);height:var(--header-h);min-width:0}
+.header-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header-logo{font-family:var(--font-display);font-size:clamp(14px,1.05vw,16px);font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-900);white-space:nowrap;line-height:1}
+.header-nav{display:none;align-items:center;gap:clamp(10px,1.1vw,22px);flex:1 1 auto;justify-content:center;min-width:0}
+@media(min-width:1280px){.header-nav{display:flex}}
+.header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-concierge{display:none;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-500);white-space:nowrap}
+@media(min-width:1536px){.header-concierge{display:flex}}
+.header-cta{flex-shrink:0}
+
+.drawer{position:fixed;inset:0;z-index:60;background:var(--paper);display:flex;flex-direction:column;transform:translateX(-100%);transition:transform 400ms var(--ease);padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.drawer.is-open{transform:translateX(0)}
+.drawer__nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:32px;gap:4px;overflow-y:auto}
+
+/* ---------- GALLERY SPECIFIC ---------- */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.filter-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  height:40px;padding:0 20px;border-radius:var(--r-md);
+  font-family:var(--font-sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
+  background:var(--paper-2);color:var(--ink-500);border:1px solid transparent;
+  transition:all var(--dur) var(--ease);cursor:pointer;white-space:nowrap;
+}
+.filter-btn:hover{background:var(--paper-3);color:var(--ink-900)}
+.filter-btn.is-active{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
+.filter-btn .count{font-weight:500;opacity:.6;margin-left:6px;font-size:10px}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+@media(min-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:20px}}
+@media(min-width:1024px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+
+.gallery-tile{
+  position:relative;overflow:hidden;
+  background:var(--paper-3);
+  border-radius:var(--r-lg);
+  aspect-ratio:4/5;
+  cursor:zoom-in;
+  transition:opacity 400ms var(--ease),transform 400ms var(--ease);
+}
+.gallery-tile img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 900ms var(--ease);
+}
+@media(hover:hover){
+  .gallery-tile:hover img{transform:scale(1.06)}
+  .gallery-tile:hover .gallery-tile__meta{opacity:1;transform:none}
+}
+.gallery-tile__meta{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:20px;
+  background:linear-gradient(180deg,transparent,rgba(10,10,10,.85));
+  color:#fff;
+  opacity:0;transform:translateY(8px);
+  transition:opacity 400ms var(--ease),transform 400ms var(--ease);
+  pointer-events:none;
+}
+.gallery-tile__meta .cat{
+  font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);
+}
+.gallery-tile__meta .title{
+  font-family:var(--font-display);font-weight:400;font-size:16px;line-height:1.3;margin-top:6px;
+}
+@media(hover:none){
+  .gallery-tile__meta{opacity:1;transform:none}
+}
+
+.gallery-tile.is-hidden{display:none}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(10,10,10,.94);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  display:none;
+  align-items:center;justify-content:center;
+  padding:24px;
+  opacity:0;
+  transition:opacity 300ms var(--ease);
+}
+.lightbox.is-open{display:flex;opacity:1}
+.lightbox__img{
+  max-width:min(1200px,92vw);
+  max-height:88vh;
+  width:auto;height:auto;
+  object-fit:contain;
+  border-radius:var(--r-lg);
+  box-shadow:0 40px 80px rgba(0,0,0,.5);
+  transform:scale(.96);
+  transition:transform 300ms var(--ease);
+}
+.lightbox.is-open .lightbox__img{transform:scale(1)}
+.lightbox__close{
+  position:absolute;top:20px;right:20px;
+  width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:var(--r-md);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.15);
+  cursor:pointer;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.lightbox__close:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3)}
+.lightbox__close .material-symbols-outlined{font-size:22px}
+.lightbox__caption{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.7);
+  font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;
+  text-align:center;padding:0 16px;
+}
+@media(max-width:639px){
+  .lightbox__close{top:12px;right:12px;width:40px;height:40px}
+  .lightbox__caption{bottom:16px;font-size:11px}
+}
+
+.footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:48px}}
+@media(min-width:1024px){.footer-grid{grid-template-columns:4fr 3fr 5fr;gap:56px}}
+.footer-bottom{display:flex;flex-direction:column;gap:16px;padding-top:24px}
+@media(min-width:768px){.footer-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+
+.flex-wrap-gap{display:flex;flex-wrap:wrap;gap:12px}
+.no-scroll{overflow:hidden}
+*{-webkit-tap-highlight-color:transparent}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);will-change:opacity,transform}
+.reveal.is-in{opacity:1;transform:none}
+.stagger > *{opacity:0;transform:translateY(18px);transition:opacity 800ms var(--ease),transform 800ms var(--ease)}
+.stagger.is-in > *{opacity:1;transform:none}
+.stagger.is-in > *:nth-child(1){transition-delay:0ms}
+.stagger.is-in > *:nth-child(2){transition-delay:60ms}
+.stagger.is-in > *:nth-child(3){transition-delay:120ms}
+.stagger.is-in > *:nth-child(4){transition-delay:180ms}
+.stagger.is-in > *:nth-child(5){transition-delay:240ms}
+.stagger.is-in > *:nth-child(6){transition-delay:300ms}
+.stagger.is-in > *:nth-child(7){transition-delay:360ms}
+.stagger.is-in > *:nth-child(8){transition-delay:420ms}
+.stagger.is-in > *:nth-child(9){transition-delay:480ms}
+.stagger.is-in > *:nth-child(10){transition-delay:540ms}
+.stagger.is-in > *:nth-child(11){transition-delay:600ms}
+.stagger.is-in > *:nth-child(12){transition-delay:660ms}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+  .reveal,.stagger > *{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <div class="header-left">
+      <button aria-label="Open menu" data-open-drawer style="padding:8px;margin-left:-8px" class="xl:hidden">
+        <span class="material-symbols-outlined" style="font-size:22px">menu</span>
+      </button>
+      <a href="index.html" class="header-logo">The Falalu</a>
+    </div>
+    <nav class="header-nav">
+      <a class="nav-link" href="index.html">Overview</a>
+      <a class="nav-link" href="rooms.html">Rooms &amp; Suites</a>
+      <a class="nav-link" href="dining.html">Dining</a>
+      <a class="nav-link" href="experiences.html">Experiences</a>
+      <a class="nav-link" href="wellness.html">Wellness</a>
+      <a class="nav-link is-active" aria-current="page" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:+39089871000" class="header-concierge">
+        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span>Concierge</span>
+      </a>
+      <a href="reservations.html" class="btn btn-primary btn-sm header-cta">Book Your Stay</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DRAWER ============ -->
+<div id="drawer" class="drawer xl:hidden">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:var(--header-h);border-bottom:1px solid var(--line);flex-shrink:0">
+    <span style="font-family:var(--font-display);font-size:16px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+    <button aria-label="Close menu" data-close-drawer style="padding:8px;margin-right:-8px">
+      <span class="material-symbols-outlined" style="font-size:22px">close</span>
+    </button>
+  </div>
+  <nav class="container drawer__nav">
+    <a class="mobile-link" href="index.html">Overview</a>
+    <a class="mobile-link" href="rooms.html">Rooms &amp; Suites</a>
+    <a class="mobile-link" href="dining.html">Dining</a>
+    <a class="mobile-link" href="experiences.html">Experiences</a>
+    <a class="mobile-link" href="wellness.html">Wellness</a>
+    <a class="mobile-link is-active" href="gallery.html">Gallery</a>
+    <a class="mobile-link" href="about.html">About</a>
+    <a class="mobile-link" href="contact.html">Contact</a>
+  </nav>
+  <div class="container" style="padding-block:20px 24px;border-top:1px solid var(--line);flex-shrink:0">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <div style="min-width:0">
+        <div class="caption" style="color:var(--ink-400)">Amalfi Coast, Italy</div>
+        <div class="body-sm" style="margin-top:2px">+39 089 871 000</div>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm" style="flex-shrink:0">Reserve</a>
+    </div>
+  </div>
+</div>
+
+<main style="padding-top:var(--header-h)">
+
+<!-- ============ PAGE INTRO ============ -->
+<section class="container" style="padding-top:56px;padding-bottom:40px">
+  <div class="reveal">
+    <div class="flex-wrap-gap" style="align-items:flex-end;justify-content:space-between;gap:32px">
+      <div style="max-width:680px">
+        <span class="eyebrow">Visual Journal</span>
+        <h1 class="h1" style="margin:16px 0 0 0">Moments in<br/>stone &amp; light.</h1>
+      </div>
+      <p class="lede" style="max-width:440px">
+        A quiet record of the property, the coastline, and the small rituals that shape a stay. Select any image to view it in full.
+      </p>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar reveal" role="tablist" aria-label="Gallery filters">
+    <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All <span class="count">(20)</span></button>
+    <button class="filter-btn" data-filter="architecture" aria-pressed="false">Architecture <span class="count">(5)</span></button>
+    <button class="filter-btn" data-filter="dining" aria-pressed="false">Dining <span class="count">(5)</span></button>
+    <button class="filter-btn" data-filter="wellness" aria-pressed="false">Wellness <span class="count">(5)</span></button>
+    <button class="filter-btn" data-filter="experiences" aria-pressed="false">Experiences <span class="count">(5)</span></button>
+  </div>
+</section>
+
+<!-- ============ GALLERY GRID ============ -->
+<section class="container" style="padding-bottom:var(--section-y)">
+  <div class="gallery-grid stagger" id="gallery-grid">
+
+    <!-- 01 · Architecture -->
+    <figure class="gallery-tile" data-category="architecture" data-caption="The Falalu Suite · Cliffside">
+      <img alt="Minimalist cliffside bedroom with glass wall opening onto a panoramic stone terrace overlooking Mediterranean limestone cliffs" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709391/photo-captures-serene-beauty-modern-minimalist-bedroom-seaside-villa-awe-inspiring-ocean-view-sleek-354199313_gsfohq.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Architecture</div>
+        <div class="title">The Falalu Suite</div>
+      </figcaption>
+    </figure>
+
+    <!-- 02 · Dining -->
+    <figure class="gallery-tile" data-category="dining" data-caption="The Obsidian Room · Plating">
+      <img alt="Chef's hands plating a fine dining dish with tweezers, high-angle close-up" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711867/professional-chef-hands-plating-fine-dining-dish-tweezers-high-angle-close-up-s-using-to-place-garnish-emphasizing-422141252_m4gnxl.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Dining</div>
+        <div class="title">Plating · L'Atelier</div>
+      </figcaption>
+    </figure>
+
+    <!-- 03 · Wellness -->
+    <figure class="gallery-tile" data-category="wellness" data-caption="Thermal Sanctuary · Caldarium">
+      <img alt="Subterranean thermal stone pool chamber with skylight and steam rising over dark basalt water" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713094/images_9_zd9drj.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Wellness</div>
+        <div class="title">Caldarium Spring</div>
+      </figcaption>
+    </figure>
+
+    <!-- 04 · Experiences -->
+    <figure class="gallery-tile" data-category="experiences" data-caption="Riva Yacht · Twilight Charter">
+      <img alt="Vintage wooden Riva yacht on calm Mediterranean water at golden hour" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714292/images_15_rdq6bi.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Experiences</div>
+        <div class="title">The Riva Expedition</div>
+      </figcaption>
+    </figure>
+
+    <!-- 05 · Architecture -->
+    <figure class="gallery-tile" data-category="architecture" data-caption="The Master Pavilion · Ocean Wing">
+      <img alt="Master Pavilion Suite — floating walnut bed frame and outdoor deck with infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709379/b117775f-f32b-4b64-b072-6a62b01f88f6-1024x683_dj7t2x.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Architecture</div>
+        <div class="title">The Master Pavilion</div>
+      </figcaption>
+    </figure>
+
+    <!-- 06 · Dining -->
+    <figure class="gallery-tile" data-category="dining" data-caption="The Cellar Vault">
+      <img alt="Subterranean limestone wine cellar with vintage racks and low amber light" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711889/images_6_a1eypj.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Dining</div>
+        <div class="title">Cellar &amp; Cigar Lounge</div>
+      </figcaption>
+    </figure>
+
+    <!-- 07 · Wellness -->
+    <figure class="gallery-tile" data-category="wellness" data-caption="Hot Basalt Bodywork">
+      <img alt="Heated volcanic basalt stones placed along a guest's back during a massage" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713120/images_11_vjlqka.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Wellness</div>
+        <div class="title">Volcanic Stone Massage</div>
+      </figcaption>
+    </figure>
+
+    <!-- 08 · Experiences -->
+    <figure class="gallery-tile" data-category="experiences" data-caption="Blue Grotto · Sorrentine Coast">
+      <img alt="Turquoise water inside a limestone sea cave along the Amalfi Coast" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714300/images_16_m4zzmg.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Experiences</div>
+        <div class="title">Blue Grotto &amp; Sea Caves</div>
+      </figcaption>
+    </figure>
+
+    <!-- 09 · Architecture -->
+    <figure class="gallery-tile" data-category="architecture" data-caption="Garden Residence · Botanical Wing">
+      <img alt="Garden Residence — tranquil garden suite bedroom opening into a private bamboo courtyard with a stone soaking tub" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709404/images_jpeg7l.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Architecture</div>
+        <div class="title">Garden Residence</div>
+      </figcaption>
+    </figure>
+
+    <!-- 10 · Dining -->
+    <figure class="gallery-tile" data-category="dining" data-caption="L'Atelier Falalu">
+      <img alt="L'Atelier Falalu — intimate fine dining room with warm lighting and refined table settings" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711874/images_4_tozeur.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Dining</div>
+        <div class="title">L'Atelier Falalu</div>
+      </figcaption>
+    </figure>
+
+    <!-- 11 · Wellness -->
+    <figure class="gallery-tile" data-category="wellness" data-caption="Acoustic Dome · Sound Bath">
+      <img alt="Subterranean acoustic meditation chamber with smooth curved stone dome, floor cushions, and singing quartz bowls" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713101/images_10_an5a4l.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Wellness</div>
+        <div class="title">Acoustic Dome</div>
+      </figcaption>
+    </figure>
+
+    <!-- 12 · Experiences -->
+    <figure class="gallery-tile" data-category="experiences" data-caption="Helicopter Odyssey · Aerial">
+      <img alt="Aerial view of the Amalfi coastline from a private helicopter" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714307/images_17_j963ju.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Experiences</div>
+        <div class="title">Helicopter Odyssey</div>
+      </figcaption>
+    </figure>
+
+    <!-- 13 · Architecture -->
+    <figure class="gallery-tile" data-category="architecture" data-caption="Cliff Penthouse · Crown Villa">
+      <img alt="Cliff Penthouse Villa — double-height penthouse with travertine columns opening to a sunset deck and infinity pool" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709415/images_1_yj234b.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Architecture</div>
+        <div class="title">Cliff Penthouse Villa</div>
+      </figcaption>
+    </figure>
+
+    <!-- 14 · Dining -->
+    <figure class="gallery-tile" data-category="dining" data-caption="Olive Pergola · Al-Fresco">
+      <img alt="Olive Pergola — sunlit terrace breakfast under ancient olive trees with views over the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711882/images_5_xftoh7.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Dining</div>
+        <div class="title">The Olive Pergola</div>
+      </figcaption>
+    </figure>
+
+    <!-- 15 · Wellness -->
+    <figure class="gallery-tile" data-category="wellness" data-caption="The Falalu Grand Alignment">
+      <img alt="Close-up of an essential oil drop falling into a herbal bowl on dark wet volcanic slate" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713141/images_13_kl2lha.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Wellness</div>
+        <div class="title">Grand Alignment Ritual</div>
+      </figcaption>
+    </figure>
+
+    <!-- 16 · Experiences -->
+    <figure class="gallery-tile" data-category="experiences" data-caption="Lemon Grove Walk · Sfusato">
+      <img alt="Terraced Amalfi lemon grove with mature citrus trees and stone retaining walls overlooking the sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714331/images_18_cryr5c.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Experiences</div>
+        <div class="title">Lemon Grove Walk</div>
+      </figcaption>
+    </figure>
+
+    <!-- 17 · Architecture -->
+    <figure class="gallery-tile" data-category="architecture" data-caption="Walnut Headboard · Bedroom Detail">
+      <img alt="Solid walnut wood headboard detail in a warm, naturally lit bedroom" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789709423/solid-walnut-wood-headboard-in-various-sizes_ergiqu.png" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Architecture</div>
+        <div class="title">Walnut &amp; Linen Detail</div>
+      </figcaption>
+    </figure>
+
+    <!-- 18 · Dining -->
+    <figure class="gallery-tile" data-category="dining" data-caption="Private Pavilion Dining">
+      <img alt="Secluded cliffside terrace at night lit by candles, set for two over the dark sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789711897/images_7_epn7uh.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Dining</div>
+        <div class="title">Private Pavilion Dining</div>
+      </figcaption>
+    </figure>
+
+    <!-- 19 · Wellness -->
+    <figure class="gallery-tile" data-category="wellness" data-caption="Botanical Wrap · CBD &amp; Algae">
+      <img alt="Clay and botanical mud wrap application in a steam-filled private subterranean treatment room" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789713135/images_12_loxvzi.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Wellness</div>
+        <div class="title">Botanical Wrap</div>
+      </figcaption>
+    </figure>
+
+    <!-- 20 · Experiences -->
+    <figure class="gallery-tile" data-category="experiences" data-caption="Cliffside Celestial Dinner">
+      <img alt="Candlelit table for two on a cliffside terrace at night, overlooking the dark Mediterranean Sea" src="https://res.cloudinary.com/dvpt87rho/image/upload/v1789714337/images_19_pa5kio.jpg" loading="lazy"/>
+      <figcaption class="gallery-tile__meta">
+        <div class="cat">Experiences</div>
+        <div class="title">Celestial Dinner</div>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox__close" id="lightbox-close" aria-label="Close viewer">
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <img class="lightbox__img" id="lightbox-img" alt=""/>
+  <div class="lightbox__caption" id="lightbox-caption"></div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:var(--paper-2);border-top:1px solid var(--line)">
+  <div class="container" style="padding-block:64px 28px">
+    <div class="footer-grid reveal" style="padding-bottom:56px;border-bottom:1px solid var(--line)">
+
+      <div>
+        <span style="font-family:var(--font-display);font-size:18px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase">The Falalu</span>
+        <p class="body-sm" style="margin-top:16px;max-width:340px">An architectural sanctuary of stone, silence, and shoreline — conceived for quiet contemplation along the Mediterranean coast.</p>
+        <div style="margin-top:28px">
+          <div class="caption" style="color:var(--accent);text-transform:uppercase;letter-spacing:0.14em;font-weight:600;font-size:10px">Direct Inquiries</div>
+          <div class="body-sm" style="margin-top:8px;color:var(--ink-700)">sanctuary@thefalalu.com</div>
+          <div class="body-sm" style="color:var(--ink-700)">+39 089 871 000</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">Directory</div>
+        <ul style="display:flex;flex-direction:column;gap:12px">
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Arrival &amp; Transfers</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Head Concierge Desk</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Press &amp; Editorial</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Ecological Stewardship</a></li>
+          <li><a class="body-sm" style="color:var(--ink-500)" href="#">Private Aviation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="h4" style="text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:600;margin-bottom:20px">The Private Ledger</div>
+        <p class="body-sm" style="margin-bottom:20px;max-width:440px">Receive unannounced suite releases, private residency invitations, and dispatches from our resident curators.</p>
+        <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Joined ✓';b.disabled=true;b.style.opacity='.7';setTimeout(()=>{b.textContent='Join Ledger';b.disabled=false;b.style.opacity='1';this.reset();},2200);">
+          <input required type="email" placeholder="your@email.com" aria-label="Email address"
+                 style="flex:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:0 18px;height:52px;font-family:var(--font-sans);font-size:15px;color:var(--ink-900);outline:none;min-width:0"
+                 onfocus="this.style.borderColor='var(--ink-900)'" onblur="this.style.borderColor='var(--line)'">
+          <button type="submit" class="btn btn-primary" style="height:52px;padding:0 26px;flex-shrink:0">Join Ledger</button>
+        </form>
+        <p class="caption" style="color:var(--ink-400);margin-top:12px">Discretion guaranteed. No cyclical mailings.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px" class="caption">
+        <span>© 2025 The Falalu Resort &amp; Sanctuary</span>
+        <a href="#" style="color:var(--ink-400)">Privacy</a>
+        <a href="#" style="color:var(--ink-400)">Legal</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:24px">
+        <a class="nav-link" href="#">Instagram</a>
+        <a class="nav-link" href="#">Journal</a>
+        <a class="nav-link" href="#">AD</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const drawer = document.getElementById('drawer');
+  const body = document.body;
+  function openDrawer(){ drawer.classList.add('is-open'); body.classList.add('no-scroll'); }
+  function closeDrawer(){ drawer.classList.remove('is-open'); body.classList.remove('no-scroll'); }
+  document.querySelectorAll('[data-open-drawer]').forEach(el => el.addEventListener('click', openDrawer));
+  document.querySelectorAll('[data-close-drawer]').forEach(el => el.addEventListener('click', closeDrawer));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+
+  // ---------- GALLERY FILTER ----------
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const tiles = document.querySelectorAll('.gallery-tile');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+      filterBtns.forEach(b => {
+        b.classList.remove('is-active');
+        b.setAttribute('aria-pressed','false');
+      });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-pressed','true');
+
+      tiles.forEach(tile => {
+        if (filter === 'all' || tile.getAttribute('data-category') === filter) {
+          tile.classList.remove('is-hidden');
+        } else {
+          tile.classList.add('is-hidden');
+        }
+      });
+    });
+  });
+
+  // ---------- LIGHTBOX ----------
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  function openLightbox(src, alt, caption){
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightboxCaption.textContent = caption || '';
+    lightbox.classList.add('is-open');
+    body.classList.add('no-scroll');
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('is-open');
+    body.classList.remove('no-scroll');
+    // Delay clearing src so fade-out isn't jarring
+    setTimeout(() => { lightboxImg.src = ''; }, 320);
+  }
+
+  tiles.forEach(tile => {
+    tile.addEventListener('click', () => {
+      const img = tile.querySelector('img');
+      const caption = tile.getAttribute('data-caption') || '';
+      openLightbox(img.src, img.alt, caption);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeLightbox();
+      closeDrawer();
+    }
+  });
+
+  // ---------- SCROLL REVEAL ----------
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('is-in'));
+  }
+})();
+</script>
+
+</body>
+</html>
